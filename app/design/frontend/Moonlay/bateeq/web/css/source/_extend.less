@@ -13,17 +13,25 @@
 .header {
   &.links {
     color: @link-color;
-    &:active {
+    &:hover {
       color: @link-color-hover;
     }
   }
 }
 
-.block-search input {
-  border: none;
-  border-bottom: 1px solid #c2c2c2;
-  padding: 0 0;
-  &:focus {
-    box-shadow: none !important;
+.block-search {
+  input {
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 0 0;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.page-header {
+  .panel.wrapper {
+    background-color: transparent;
   }
 }
