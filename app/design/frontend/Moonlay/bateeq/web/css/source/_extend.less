@@ -1,0 +1,37 @@
+// Variables
+@primary-color: tomato;
+@link-color: #505050;
+@link-color-hover: darken(@link-color, 10%);
+
+.action {
+  &.primary {
+    background-color: @primary-color;
+    border-color: @primary-color;
+  }
+}
+
+.header {
+  &.links {
+    color: @link-color;
+    &:hover {
+      color: @link-color-hover;
+    }
+  }
+}
+
+.block-search {
+  input {
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 0 0;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.page-header {
+  .panel.wrapper {
+    background-color: transparent;
+  }
+}
