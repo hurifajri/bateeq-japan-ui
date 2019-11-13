@@ -1,37 +1,53 @@
-// Variables
-@primary-color: tomato;
-@link-color: #505050;
-@link-color-hover: darken(@link-color, 10%);
+//css-in-less :)
 
-.action {
-  &.primary {
-    background-color: @primary-color;
-    border-color: @primary-color;
+.page-header .panel.wrapper {
+  background-color: transparent;
+}
+
+.block-search input {
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 0 0;
+}
+
+.block-search input:focus {
+  box-shadow: none !important;
+}
+
+.block-search .label:before {
+  margin: 12px 10px 0 0;
+}
+
+.header.panel > .header.links,
+.header.panel > .header.links > li > a,
+.header.panel > .header.links > li > a:visited {
+  color: #505050;
+}
+
+.header.panel > .header.links > li > a:hover {
+  color: #313131;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    margin-top: 12px;
+  }
+
+  .minicart-wrapper {
+    margin-top: 12px;
   }
 }
 
-.header {
-  &.links {
-    color: @link-color;
-    &:hover {
-      color: @link-color-hover;
-    }
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin: 0px auto 0 0;
   }
-}
 
-.block-search {
-  input {
-    border: none;
-    border-bottom: 1px solid #c2c2c2;
-    padding: 0 0;
-    &:focus {
-      box-shadow: none !important;
-    }
+  .minicart-wrapper {
+    margin-top: 2px;
   }
-}
 
-.page-header {
-  .panel.wrapper {
-    background-color: transparent;
+  .header.panel > .header.links {
+    margin-top: 7px;
   }
 }
