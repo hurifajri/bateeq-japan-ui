@@ -13,5 +13,6 @@
         <!--<move element="navigation.sections" destination="header.panel" after="top.search" />-->
         <move element="top.search" destination="header.panel" after="minicart" />
         <move element="minicart" destination="header.panel" after="header.links" />
+        <move element="catalog.compare.link" destination="top.links" />
     </body>
 </page>
