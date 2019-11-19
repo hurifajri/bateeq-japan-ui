@@ -1,5 +1,98 @@
 //css-in-less :)
 
+.container {
+  display: grid;
+  min-height: 800px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 75px auto;
+  grid-row-gap: 1px;
+  grid-column-gap: 67px;
+}
+
+.item {
+  text-align: center;
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.title h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title h2:nth-child(1) {
+  font-family: PingFangSC;
+  //font-size: 30px;
+  font-size: 23px;
+  font-weight: 600;
+  //line-height: 2.33;
+  line-height: 1.33;
+  color: #004376;
+}
+
+.title h2:nth-child(2) {
+  font-family: Montserrat;
+  //font-size: 25px;
+  font-size: 20px;
+  font-weight: normal;
+  //line-height: 2.8;
+  line-height: 1;
+  color: #505050;
+}
+
+.etalase {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  );
+}
+
+.etalase > img {
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.etalase > .collection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collection a {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.collection a:nth-child(1) {
+  font-family: PingFangSC;
+  //font-size: 35px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.collection a:nth-child(2) {
+  font-family: Montserrat;
+  //font-size: 25px;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
 .page-header .panel.wrapper {
   background-color: transparent;
 }
