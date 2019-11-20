@@ -18,31 +18,43 @@
 
 .container {
   display: grid;
-  min-height: 800px;
+  min-height: 1375px;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: 100px auto;
+  grid-template-rows: 40px auto 575px;
   grid-row-gap: 1px;
-  grid-column-gap: 67px;
+  grid-gap: 67px;
+  margin-bottom: 50px;
 }
 
-.item {
+.item,
+.ranking {
   text-align: center;
 }
 
-.title {
+.ranking {
+  margin-bottom: 40px;
+}
+
+.colspan {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.title,
+.ranking {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
 }
 
-.title h2 {
+.title h2,
+.ranking h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.title h2:nth-child(1) {
+.title h2:nth-child(1),
+.ranking h2:nth-child(1) {
   font-family: "PingFangSC";
   font-size: 30px;
   font-weight: 600;
@@ -51,7 +63,8 @@
   color: #004376;
 }
 
-.title h2:nth-child(2) {
+.title h2:nth-child(2),
+.ranking h2:nth-child(2) {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: normal;
@@ -69,7 +82,17 @@
   );
 }
 
-.etalase > img {
+.banner {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(80, 80, 80, 0.45),
+    rgba(80, 80, 80, 0.45)
+  );
+}
+
+.etalase > img,
+.banner > img {
   position: relative;
   z-index: -1;
   object-fit: cover;
@@ -77,30 +100,59 @@
   max-height: 100%;
 }
 
-.etalase > .collection {
+.etalase > .collection,
+.banner > .about {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.collection a {
+.collection a,
+.about p,
+.about button {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   color: #ffffff;
 }
 
+.about p {
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.about button {
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: normal;
+
+  background-color: Transparent;
+  border: solid 0.5px #ffffff;
+  width: 220px;
+  height: 40px;
+  border-radius: 0;
+  box-shadow: unset;
+  padding: 0 15px;
+  vertical-align: text-bottom;
+}
+
 .collection a:nth-child(1) {
   font-family: "PingFangSC";
-  font-size: 35px;
+  //font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1;
 }
 
 .collection a:nth-child(3) {
   font-family: "Montserrat";
-  font-size: 25px;
+  //font-size: 25px;
+  font-size: 21px;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -163,5 +215,18 @@
 
   .header.panel > .header.links {
     margin-top: 7px;
+  }
+
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(3n + 1) {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-layout-1column .block.widget .products-grid .product-item {
+    margin-left: 6%;
   }
 }

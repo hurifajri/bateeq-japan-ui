@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="item title">
+    <div class="item colspan title">
         <h2>新参者</h2>
         <h2>New Arrival</h2>
     </div>
@@ -19,4 +19,17 @@
             <a href="#">Women’s Collection</a>
         </div>
     </div>
+    <div class="item colspan banner">
+        <img src='<?php echo $this->getViewFileUrl('Moonlay_CustomHome::images/banner.jpg'); ?>' />
+        <div class="about">
+            <img src='<?php echo $this->getViewFileUrl('Moonlay_CustomHome::images/logo-white.png'); ?>' />
+            <p>2013年に発売されたbateeqは、インドネシアのファッションブランドであり、新鮮で、 流行に敏感な男性、女性向けの衣料品ラインを通じてバティックを取り入れ、子供、家の装飾に加えて。革新的なモチーフで知られるbateeq 何世紀も昔の工芸品に現代的なエッジを提供して、楽なコレクションを作成します 今日の洗練されたデザインの既製のドレス、シャツ、ブラウス、パンツ 消費者および小売業者。</p>
+            <button class="more">続きを読む</button>
+        </div>
+    </div>
 </div>
+<div class="ranking">
+    <h2>ランキング</h2>
+    <h2>Ranking</h2>
+</div>
+<p>{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" products_per_page="8" products_count="8" template="product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`WS12, WT09, MT07, MH07, 24-MB02, 24-WB04, 241-MB08, 240-LV05`^]^]"}}</p>
