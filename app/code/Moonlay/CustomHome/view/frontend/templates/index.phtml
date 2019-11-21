@@ -28,8 +28,20 @@
         </div>
     </div>
 </div>
+
 <div class="ranking">
     <h2>ランキング</h2>
     <h2>Ranking</h2>
 </div>
-<p>{{widget type="Magento\CatalogWidget\Block\Product\ProductsList" products_per_page="8" products_count="8" template="product/widget/content/grid.phtml" conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`sku`,`operator`:`()`,`value`:`WS12, WT09, MT07, MH07, 24-MB02, 24-WB04, 241-MB08, 240-LV05`^]^]"}}</p>
+
+<?php
+
+$productsBlock = $this->getLayout()->createBlock(\Magento\CatalogWidget\Block\Product\ProductsList::class);
+$productsBlock->setTitle("My products");
+$productsBlock->setProductsCount(5);
+$productsBlock->setTemplate("product/widget/content/grid.phtml");
+$productsBlock->setConditionsEncoded("^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`28`^],`1--2`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`attribute_set_id`,`operator`:`==`,`value`:`4`^]^]");
+
+echo $productsBlock->toHtml();
+
+?>
