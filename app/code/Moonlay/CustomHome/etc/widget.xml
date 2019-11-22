@@ -2,9 +2,9 @@
          xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
 
     <widget class="Moonlay\CustomHome\Block\Widget\Collections" id="moonlay_customhome_collections">
-		<label>Collections</label>
+		<label>Custom: Collections</label>
 		<description>
-            Men and Women's Collection banner
+            Men and Women's Collection || Banner
         </description>
 		<parameters>
 			<parameter name="title_jp" xsi:type="text" required="true" visible="true" sort_order="10">
@@ -29,6 +29,22 @@
 
             <parameter name="women_en" xsi:type="text" required="true" visible="true" sort_order="60">
                 <label>English Title for Women</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\About" id="moonlay_customhome_about">
+		<label>Custom: About</label>
+		<description>
+            About Bateeq || Banner and Video
+        </description>
+		<parameters>
+			<parameter name="about" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>About Description</label>
+            </parameter>
+
+            <parameter name="video_id" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Youtube video id</label>
             </parameter>
 		</parameters>
 	</widget>
