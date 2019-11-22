@@ -1,49 +1,35 @@
 <widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
-         
-    <widget class="Moonlay\CustomHome\Block\Widget\Ngtes" id="moonlay_customhome_ngtes">
-        <label>My New Widget</label>
-        <description>This is a test widget!!!</description>
-        <parameters>
-            <parameter name="title" xsi:type="text" required="true" visible="true" sort_order="10">
-                <label>Label</label>
-            </parameter>
-            <parameter name="size" xsi:type="select" visible="true" required="true" sort_order="20">
-                <label translate="true">Size</label>
-                <options>
-                    <option name="s" value="S">
-                        <label>S</label>
-                    </option>
-                    <option name="m" value="M" selected="true">
-                        <label>M</label>
-                    </option>
-                    <option name="l" value="L">
-                        <label>L</label>
-                    </option>
-                </options>
-            </parameter>
-        </parameters>
-    </widget>
 
-    <widget class="Moonlay\CustomHome\Block\Widget\Posts" id="moonlay_customhome_posts">
-		<label>Blog Posts</label>
-		<description>Posts</description>
-		<parameters>
-			<parameter name="posts" sort_order="10" visible="true" xsi:type="text">
-				<label>Custom Posts Label</label>
-			</parameter>
-		</parameters>
-	</widget>
-
-    <widget class="Moonlay\CustomHome\Block\Widget\Video" id="moonlay_customhome_video">
-		<label>Youtube Video</label>
+    <widget class="Moonlay\CustomHome\Block\Widget\Collections" id="moonlay_customhome_collections">
+		<label>Collections</label>
 		<description>
-            Example: https://www.youtube.com/watch?v=uEM5P129Pwo
+            Men and Women's Collection banner
         </description>
 		<parameters>
-			<parameter name="video" sort_order="10" visible="true" xsi:type="text">
-				<label>Youtube video id</label>
-			</parameter>
+			<parameter name="title_jp" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Japanese Title</label>
+            </parameter>
+
+            <parameter name="title_en" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>English Title</label>
+            </parameter>
+
+            <parameter name="men_jp" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label>Japanese Title for Men</label>
+            </parameter>
+
+            <parameter name="men_en" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>English Title for Men</label>
+            </parameter>
+
+            <parameter name="women_jp" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>Japanese Title for Women</label>
+            </parameter>
+
+            <parameter name="women_en" xsi:type="text" required="true" visible="true" sort_order="60">
+                <label>English Title for Women</label>
+            </parameter>
 		</parameters>
 	</widget>
 </widgets>
