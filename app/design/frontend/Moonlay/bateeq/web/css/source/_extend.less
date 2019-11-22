@@ -19,45 +19,38 @@
   font-display: swap;
 }
 
-.container {
+.container-collection {
   display: grid;
-  min-height: 1375px;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: 40px auto 575px;
-  grid-row-gap: 1px;
-  grid-gap: 67px;
+  grid-template-rows: 40px auto;
+  grid-column-gap: 35px;
+  grid-row-gap: 50px;
   margin-bottom: 50px;
 }
 
-.item,
-.ranking {
-  text-align: center;
+.container-about {
+  margin-bottom: 50px;
 }
 
-.ranking {
-  margin-bottom: 40px;
-}
-
-.colspan {
+.colspan-2 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.title,
-.ranking {
+.title {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.title h2,
-.ranking h2 {
+.title h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.title h2:nth-child(1),
-.ranking h2:nth-child(1) {
+.title h2:nth-child(1) {
   font-family: "PingFangSC";
   font-size: 30px;
   font-weight: 600;
@@ -66,8 +59,7 @@
   color: #004376;
 }
 
-.title h2:nth-child(2),
-.ranking h2:nth-child(2) {
+.title h2:nth-child(2) {
   font-family: "Montserrat";
   font-size: 25px;
   font-weight: normal;
@@ -76,25 +68,29 @@
   color: #505050;
 }
 
-.etalase {
-  position: relative;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.55)
-  );
-}
-
 .banner {
   position: relative;
   background: linear-gradient(
     to bottom,
-    rgba(80, 80, 80, 0.45),
-    rgba(80, 80, 80, 0.45)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
   );
 }
 
-.etalase > img,
+@media (max-width: 767px) {
+  .banner {
+    height: 100%;
+    min-height: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    min-height: 100%;
+    height: 518px;
+  }
+}
+
 .banner > img {
   position: relative;
   z-index: -1;
@@ -103,8 +99,7 @@
   max-height: 100%;
 }
 
-.etalase > .collection,
-.banner > .about {
+.banner > .collection {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,6 +108,7 @@
 
 .collection {
   cursor: pointer;
+  text-align: center;
 }
 
 .collection a,
@@ -122,10 +118,6 @@
   font-style: normal;
   letter-spacing: normal;
   color: #ffffff;
-}
-
-.collection a:hover {
-  text-decoration: none;
 }
 
 .about p {
@@ -166,6 +158,70 @@
   font-size: 21px;
   font-weight: normal;
   line-height: 1.4;
+}
+
+.collection a:hover {
+  text-decoration: none;
+}
+
+.about {
+  min-height: 350px;
+  padding: 50px 50px;
+  background-image: url("http://127.0.0.1/pub/static/version1574307734/frontend/Moonlay/bateeq/en_US/Moonlay_CustomHome/images/banner.jpg"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 50px 150px;
+  }
+}
+
+.about-logo {
+  margin-right: 100px;
+}
+
+.about-text {
+  max-width: 900px;
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+button.more {
+  display: none;
+}
+
+.video iframe {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .video iframe {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video iframe {
+    height: 500px;
+  }
 }
 
 // Theme bateeq
