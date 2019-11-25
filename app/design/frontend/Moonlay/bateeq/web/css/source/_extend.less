@@ -14,24 +14,20 @@
   color: #004376 !important;
 }
 
-.margin-title-register
-{
+.margin-title-register {
   margin: 0 0 20px !important;
 }
 
-.register-center
-{
+.register-center {
   width: 60% !important;
   transform: translate(37%, 1%) !important;
 }
-.customer-account-create .page-main > .page-title-wrapper
-{
+.customer-account-create .page-main > .page-title-wrapper {
   visibility: hidden !important;
   display: none !important;
 }
 
-.title-register .jpn-reg
-{
+.title-register .jpn-reg {
   font-family: PingFangSC !important;
   font-size: 30px !important;
   font-weight: 600 !important;
@@ -46,8 +42,7 @@
   height: 40px !important;
 }
 
-.title-register .eng-reg
-{
+.title-register .eng-reg {
   font-family: Montserrat !important;
   font-size: 25px !important;
   font-weight: normal !important;
@@ -61,8 +56,7 @@
   margin-bottom: 0px !important;
 }
 
-.btn-register
-{
+.btn-register {
   width: 115px !important;
   height: 35px !important;
   background: #004376 !important;
@@ -70,18 +64,15 @@
 }
 
 // start login
-.customer-account-login .page-main > .page-title-wrapper .page-title
-{
+.customer-account-login .page-main > .page-title-wrapper .page-title {
   visibility: hidden !important;
 }
 
-.login-container
-{
+.login-container {
   position: relative;
 }
 
-.center
-{
+.center {
   width: 60% !important;
   margin: 0 !important;
   position: relative !important;
@@ -90,13 +81,11 @@
   transform: translate(-50%, -50%) !important;
 }
 
-.login-container .fieldset > .field > .control
-{
+.login-container .fieldset > .field > .control {
   width: 100%;
 }
 
-.input-text-login
-{
+.input-text-login {
   width: 100% !important;
   padding: 12px 20px !important;
   margin: 8px 0 !important;
@@ -105,29 +94,24 @@
   border-bottom: 2px solid #505050 !important;
 }
 
-.margin-frgt-andbtn-login
-{
+.margin-frgt-andbtn-login {
   margin-bottom: 10px;
   text-align: right;
 }
 
-.disble-display
-{
-  display: none;
+.disble-display {
+  display: none !important;
 }
 
-.actions-toolbar-login
-{
+.actions-toolbar-login {
   position: relative;
 }
 
-.login-container .fieldset:after
-{
+.login-container .fieldset:after {
   display: none;
 }
 
-.btn-login
-{
+.btn-login {
   width: 115px !important;
   height: 35px !important;
   background: #004376 !important;
@@ -148,8 +132,7 @@
   color: #004376 !important;
 }
 
-.title-login .jpn
-{
+.title-login .jpn {
   font-family: PingFangSC !important;
   font-size: 30px !important;
   font-weight: 600 !important;
@@ -164,8 +147,7 @@
   height: 40px !important;
 }
 
-.title-login .eng
-{
+.title-login .eng {
   font-family: Montserrat !important;
   font-size: 25px !important;
   font-weight: normal !important;
@@ -241,5 +223,314 @@
 
   .header.panel > .header.links {
     margin-top: 7px;
+  }
+}
+
+/*
+ * CSS in Less :)
+ */
+
+// Module Moonlay/CustomHome
+@font-face {
+  font-family: "PingFangSC";
+  src: url("../fonts/PingFangSC-Semibold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container-collection {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 40px auto;
+  grid-column-gap: 35px;
+  grid-row-gap: 50px;
+  margin-bottom: 50px;
+}
+
+.container-about {
+  margin-bottom: 50px;
+}
+
+.colspan-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.title {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title h2:nth-child(1) {
+  font-family: "PingFangSC";
+  font-size: 30px;
+  font-weight: 600;
+  //line-height: 2.33;
+  line-height: 1.33;
+  color: #004376;
+}
+
+.title h2:nth-child(2) {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: normal;
+  //line-height: 2.8;
+  line-height: 1;
+  color: #505050;
+}
+
+.banner {
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.banner:hover {
+  background: unset;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 100%;
+    min-height: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    min-height: 100%;
+    height: 518px;
+  }
+}
+
+.banner > img {
+  position: relative;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.banner > .collection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collection {
+  cursor: pointer;
+  text-align: center;
+}
+
+.collection a,
+.about p,
+.about button {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.about p {
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.about button {
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  line-height: normal;
+
+  background-color: Transparent;
+  border: solid 0.5px #ffffff;
+  width: 220px;
+  height: 40px;
+  border-radius: 0;
+  box-shadow: unset;
+  padding: 0 15px;
+  vertical-align: text-bottom;
+}
+
+.collection a:nth-child(1) {
+  font-family: "PingFangSC";
+  //font-size: 35px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.collection a:nth-child(3) {
+  font-family: "Montserrat";
+  //font-size: 25px;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.collection a:hover {
+  text-decoration: none;
+}
+
+.about {
+  min-height: 350px;
+  padding: 50px 50px;
+  background-image: url("http://127.0.0.1/pub/static/version1574307734/frontend/Moonlay/bateeq/en_US/Moonlay_CustomHome/images/banner.jpg"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 50px 150px;
+  }
+}
+
+.about-logo {
+  margin-right: 100px;
+}
+
+.about-text {
+  max-width: 900px;
+  font-family: "PingFangSC";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+button.more {
+  display: none;
+}
+
+.video iframe {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .video iframe {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video iframe {
+    height: 500px;
+  }
+}
+
+// Theme Moonlay/bateeq
+.page-header .panel.wrapper {
+  background-color: transparent;
+}
+
+.block-search input {
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  padding: 0 0;
+}
+
+.block-search input:focus {
+  box-shadow: none !important;
+}
+
+.block-search .label:before {
+  margin: 12px 10px 0 0;
+}
+
+.header.panel > .header.links,
+.header.panel > .header.links > li > a,
+.header.panel > .header.links > li > a:visited {
+  color: #505050;
+}
+
+.header.panel > .header.links > li > a:hover {
+  color: #313131;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    margin-top: 12px;
+  }
+
+  .minicart-wrapper {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-header .header.panel {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    margin: 0px auto 0 0;
+  }
+
+  .block-search {
+    width: 40vw;
+  }
+
+  .minicart-wrapper {
+    margin-top: 2px;
+  }
+
+  .header.panel > .header.links {
+    margin-top: 7px;
+  }
+
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(3n + 1) {
+    margin-left: 6%;
+  }
+
+  .nav-sections {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-layout-1column .block.widget .products-grid .product-item {
+    margin-left: 6%;
   }
 }
