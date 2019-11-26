@@ -245,6 +245,7 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Mageplaza_Core' => 1,
+        'Mageplaza_BannerSlider' => 1,
         'Mageplaza_Smtp' => 1,
         'Magestat_SigninPhoneNumber' => 0,
         'Temando_Shipping' => 1,
