@@ -1,21 +1,17 @@
-.margin-title-register
-{
+.margin-title-register {
   margin: 0 0 20px !important;
 }
 
-.register-center
-{
+.register-center {
   width: 60% !important;
   transform: translate(37%, 1%) !important;
 }
-.customer-account-create .page-main > .page-title-wrapper
-{
+.customer-account-create .page-main > .page-title-wrapper {
   visibility: hidden !important;
   display: none !important;
 }
 
-.title-register .jpn-reg
-{
+.title-register .jpn-reg {
   font-family: PingFangSC !important;
   font-size: 30px !important;
   font-weight: 600 !important;
@@ -30,8 +26,7 @@
   height: 40px !important;
 }
 
-.title-register .eng-reg
-{
+.title-register .eng-reg {
   font-family: Montserrat !important;
   font-size: 25px !important;
   font-weight: normal !important;
@@ -45,8 +40,7 @@
   margin-bottom: 0px !important;
 }
 
-.btn-register
-{
+.btn-register {
   width: 115px !important;
   height: 35px !important;
   background: #004376 !important;
@@ -54,18 +48,15 @@
 }
 
 // start login
-.customer-account-login .page-main > .page-title-wrapper .page-title
-{
+.customer-account-login .page-main > .page-title-wrapper .page-title {
   visibility: hidden !important;
 }
 
-.login-container
-{
+.login-container {
   position: relative;
 }
 
-.center
-{
+.center {
   width: 60% !important;
   margin: 0 !important;
   position: relative !important;
@@ -74,13 +65,11 @@
   transform: translate(-50%, -50%) !important;
 }
 
-.login-container .fieldset > .field > .control
-{
+.login-container .fieldset > .field > .control {
   width: 100%;
 }
 
-.input-text-login
-{
+.input-text-login {
   width: 100% !important;
   padding: 12px 20px !important;
   margin: 8px 0 !important;
@@ -89,29 +78,24 @@
   border-bottom: 2px solid #505050 !important;
 }
 
-.margin-frgt-andbtn-login
-{
+.margin-frgt-andbtn-login {
   margin-bottom: 10px;
   text-align: right;
 }
 
-.disble-display
-{
-  display: none;
+.disble-display {
+  display: none !important;
 }
 
-.actions-toolbar-login
-{
+.actions-toolbar-login {
   position: relative;
 }
 
-.login-container .fieldset:after
-{
+.login-container .fieldset:after {
   display: none;
 }
 
-.btn-login
-{
+.btn-login {
   width: 115px !important;
   height: 35px !important;
   background: #004376 !important;
@@ -132,8 +116,7 @@
   color: #004376 !important;
 }
 
-.title-login .jpn
-{
+.title-login .jpn {
   font-family: PingFangSC !important;
   font-size: 30px !important;
   font-weight: 600 !important;
@@ -148,8 +131,7 @@
   height: 40px !important;
 }
 
-.title-login .eng
-{
+.title-login .eng {
   font-family: Montserrat !important;
   font-size: 25px !important;
   font-weight: normal !important;
@@ -164,69 +146,6 @@
 }
 
 //end login
-
-//css-in-less :)
-
-.page-header .panel.wrapper {
-  background-color: transparent;
-}
-
-.block-search input {
-  border: none;
-  border-bottom: 1px solid #c2c2c2;
-  padding: 0 0;
-}
-
-.block-search input:focus {
-  box-shadow: none !important;
-}
-
-.block-search .label:before {
-  margin: 12px 10px 0 0;
-}
-
-.header.panel > .header.links,
-.header.panel > .header.links > li > a,
-.header.panel > .header.links > li > a:visited {
-  color: #505050;
-}
-
-.header.panel > .header.links > li > a:hover {
-  color: #313131;
-}
-
-@media only screen and (max-width: 767px) {
-  .logo {
-    margin-top: 12px;
-  }
-
-  .minicart-wrapper {
-    margin-top: 12px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .page-header .header.panel {
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-
-  .logo {
-    margin: 0px auto 0 0;
-  }
-
-  .block-search {
-    width: 40vw;
-  }
-
-  .minicart-wrapper {
-    margin-top: 2px;
-  }
-
-  .header.panel > .header.links {
-    margin-top: 7px;
-  }
-}
 
 /*
  * CSS in Less :)
@@ -249,10 +168,29 @@
   font-display: swap;
 }
 
+.container-text {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.running-text {
+  font-family: "PingFangSC";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+  background-color: #c1c1c1;
+  padding: 5px 0;
+}
+
 .container-collection {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: 40px auto;
+  grid-template-rows: 150px auto;
   grid-column-gap: 35px;
   grid-row-gap: 50px;
   margin-bottom: 50px;
@@ -272,7 +210,8 @@
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
-  margin-bottom: 50px;
+  align-self: end;
+  margin-bottom: 0;
 }
 
 .title h2 {
@@ -524,6 +463,36 @@ button.more {
     .products-grid
     .product-item:nth-child(3n + 1) {
     margin-left: 6%;
+  }
+
+  .nav-sections {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .customer-welcome .action.switch {
+    color: #505050;
+  }
+
+  .customer-welcome .header.links {
+    min-width: 200px;
+  }
+
+  .page-footer {
+    background-color: #505050;
+  }
+
+  .footer.content .links a,
+  .footer.content .links a:visited {
+    color: #ffffff;
+  }
+
+  .copyright {
+    background-color: #ffffff;
+  }
+
+  .copyright span {
+    color: #505050;
   }
 }
 
