@@ -1,6 +1,6 @@
 {
   "name": "moonlay/theme-frontend-bateeq",
-  "description": "Custom Theme for Bateeq Japan",
+  "description": "Magento 2 Luma Child Theme",
   "config": {
     "sort-packages": true
   },
