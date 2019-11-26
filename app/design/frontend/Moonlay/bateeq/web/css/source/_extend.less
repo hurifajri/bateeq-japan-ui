@@ -1,11 +1,185 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .chekboxTandCRegis{
+    margin-bottom: 20px;
+  }
+  
+  .input-text-name
+  {
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 94% !important;
+    padding: 0 10px;
+  }  
+
+  #lastname-error {
+    position: unset;
+  }
+
+  .margin-buttom-name-register
+  {
+    margin-bottom: 20px;
+  }
+
+  .btn-register {
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
+
+  .btn-reg-div
+  {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .chekboxTandCRegis{
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .input-text-name
+  {
+    width: 48% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-bottom: 2px solid #87929d !important;
+  }
+
+  .register-center {
+    width: 60% !important;
+    transform: translate(37%, 1%);
+  }
+
+  #lastname-error {
+    position: absolute;
+    top: 35px;
+    left: 387px;
+  }
+
+  .margin-buttom-name-register
+  {
+    margin-bottom: 60px;
+  }
+
+  .btn-register {
+    width: 115px !important;
+    height: 35px !important;
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+.field-name-firstname, .field-name-lastname {
+  position: relative;
+}
+
+#firstname-error {
+  position: absolute;
+  width: 48%;
+  top: 35px;
+}
+
+.You-can-use-a-phone {
+  width: 349px;
+  height: 19px;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #505050;
+}
+
+.delete-margin-butto-register
+{
+  margin: 0 0 0px !important;
+}
+
+.dropdown-register
+{
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+  height: auto !important;
+}
+
+.custom-dropdown 
+{
+  position: relative !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0px !important;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: red;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}
+
+.delete-margin
+{
+  margin: 0 !important;
+}
+
+.fullname-register
+{
+  margin-top: 0px !important;
+  width: 122px !important;
+  height: 30px !important;
+  font-family: "Montserrat" !important;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: normal !important;
+  letter-spacing: normal !important;
+  color: #004376 !important;
+}
+
 .margin-title-register {
   margin: 0 0 20px !important;
 }
 
-.register-center {
-  width: 60% !important;
-  transform: translate(37%, 1%) !important;
-}
+
 .customer-account-create .page-main > .page-title-wrapper {
   visibility: hidden !important;
   display: none !important;
@@ -40,29 +214,49 @@
   margin-bottom: 0px !important;
 }
 
-.btn-register {
-  width: 115px !important;
-  height: 35px !important;
-  background: #004376 !important;
-  border: 1px solid #004376 !important;
+// start login
+@media only screen and (max-width: 600px) {
+  .center {
+    width: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .btn-login {
+    width: 100% !important;
+    height: 35px !important;
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
 }
 
-// start login
+@media only screen and (min-width: 992px) {
+  .center {
+    width: 60% !important;
+    margin: 0 !important;
+    position: relative !important;
+    top: 100px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .btn-login {
+    width: 115px !important;
+    height: 35px !important;
+    background: #004376 !important;
+    border: 1px solid #004376 !important;
+  }
+}
+
 .customer-account-login .page-main > .page-title-wrapper .page-title {
   visibility: hidden !important;
 }
 
 .login-container {
   position: relative;
-}
-
-.center {
-  width: 60% !important;
-  margin: 0 !important;
-  position: relative !important;
-  top: 100px !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
 }
 
 .login-container .fieldset > .field > .control {
@@ -75,7 +269,7 @@
   margin: 8px 0 !important;
   box-sizing: border-box !important;
   border: none !important;
-  border-bottom: 2px solid #505050 !important;
+  border-bottom: 2px solid #87929d !important;
 }
 
 .margin-frgt-andbtn-login {
@@ -93,13 +287,6 @@
 
 .login-container .fieldset:after {
   display: none;
-}
-
-.btn-login {
-  width: 115px !important;
-  height: 35px !important;
-  background: #004376 !important;
-  border: 1px solid #004376 !important;
 }
 
 .Forgot-Password {
