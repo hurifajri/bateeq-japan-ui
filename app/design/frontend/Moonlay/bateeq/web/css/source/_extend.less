@@ -168,10 +168,8 @@
   font-display: swap;
 }
 
-.container-text {
-  width: 100%;
-  position: absolute;
-  left: 0;
+.text-container {
+  line-height: 0.5 !important;
 }
 
 .running-text {
@@ -187,12 +185,26 @@
   padding: 5px 0;
 }
 
+#banner-slider-carousel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+#mageplaza-bannerslider-block-before-content-1 {
+  display: none;
+}
+
 .container-collection {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: 150px auto;
+  grid-template-rows: 65px auto;
   grid-column-gap: 35px;
   grid-row-gap: 50px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -210,7 +222,6 @@
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
-  align-self: end;
   margin-bottom: 0;
 }
 
@@ -398,6 +409,10 @@ button.more {
 }
 
 // Theme Moonlay/bateeq
+.page-header {
+  margin-bottom: 0;
+}
+
 .page-header .panel.wrapper {
   background-color: transparent;
 }
