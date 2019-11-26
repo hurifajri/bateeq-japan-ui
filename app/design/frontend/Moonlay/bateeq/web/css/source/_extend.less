@@ -334,69 +334,6 @@
 
 //end login
 
-//css-in-less :)
-
-.page-header .panel.wrapper {
-  background-color: transparent;
-}
-
-.block-search input {
-  border: none;
-  border-bottom: 1px solid #c2c2c2;
-  padding: 0 0;
-}
-
-.block-search input:focus {
-  box-shadow: none !important;
-}
-
-.block-search .label:before {
-  margin: 12px 10px 0 0;
-}
-
-.header.panel > .header.links,
-.header.panel > .header.links > li > a,
-.header.panel > .header.links > li > a:visited {
-  color: #505050;
-}
-
-.header.panel > .header.links > li > a:hover {
-  color: #313131;
-}
-
-@media only screen and (max-width: 767px) {
-  .logo {
-    margin-top: 12px;
-  }
-
-  .minicart-wrapper {
-    margin-top: 12px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .page-header .header.panel {
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-
-  .logo {
-    margin: 0px auto 0 0;
-  }
-
-  .block-search {
-    width: 40vw;
-  }
-
-  .minicart-wrapper {
-    margin-top: 2px;
-  }
-
-  .header.panel > .header.links {
-    margin-top: 7px;
-  }
-}
-
 /*
  * CSS in Less :)
  */
@@ -418,12 +355,48 @@
   font-display: swap;
 }
 
+.text-container {
+  line-height: 0.5 !important;
+}
+
+.running-text {
+  font-family: "PingFangSC";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #505050;
+  background-color: #c1c1c1;
+  padding: 5px 0;
+}
+
+#banner-slider-carousel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.owl-carousel .owl-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+#mageplaza-bannerslider-block-before-content-1 {
+  display: none;
+}
+
 .container-collection {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: 40px auto;
+  grid-template-rows: 65px auto;
   grid-column-gap: 35px;
   grid-row-gap: 50px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -441,7 +414,7 @@
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .title h2 {
@@ -628,6 +601,10 @@ button.more {
 }
 
 // Theme Moonlay/bateeq
+.page-header {
+  margin-bottom: 0;
+}
+
 .page-header .panel.wrapper {
   background-color: transparent;
 }
@@ -697,6 +674,32 @@ button.more {
 
   .nav-sections {
     margin-bottom: 0;
+    display: none;
+  }
+
+  .customer-welcome .action.switch {
+    color: #505050;
+  }
+
+  .customer-welcome .header.links {
+    min-width: 200px;
+  }
+
+  .page-footer {
+    background-color: #505050;
+  }
+
+  .footer.content .links a,
+  .footer.content .links a:visited {
+    color: #ffffff;
+  }
+
+  .copyright {
+    background-color: #ffffff;
+  }
+
+  .copyright span {
+    color: #505050;
   }
 }
 
