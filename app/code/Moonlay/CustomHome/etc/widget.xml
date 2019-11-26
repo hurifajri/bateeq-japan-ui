@@ -52,7 +52,7 @@
     <widget class="Moonlay\CustomHome\Block\Widget\RunningText" id="moonlay_customhome_runningtext">
 		<label>Custom: Running Text</label>
 		<description>
-            Homepage headline || Running text
+            Homepage headline || Running Text
         </description>
 		<parameters>
 			<parameter name="running_text" xsi:type="text" required="true" visible="true" sort_order="10">
