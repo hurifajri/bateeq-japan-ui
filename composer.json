@@ -11,6 +11,7 @@
         "sort-packages": true
     },
     "require": {
+        "clarion/customer-attribute": "^1.2",
         "fooman/googleanalyticsplus-m2": "^4.0",
         "magento/module-bundle-sample-data": "100.3.*",
         "magento/module-catalog-rule-sample-data": "100.3.*",
