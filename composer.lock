@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9d4dd2253858458b64d033a4880d044",
+    "content-hash": "47396f35b3a26c944761d2f0b43d264f",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -395,6 +395,29 @@
                 "rfc4648"
             ],
             "time": "2018-11-02T09:03:50+00:00"
+        },
+        {
+            "name": "clarion/customer-attribute",
+            "version": "1.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/clarion/customer-attribute/clarion-customer-attribute-1.2.0.0.zip",
+                "shasum": "04196524428cc4c367563ff779985d41eebef846"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Clarion\\CustomerAttribute\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Manage Customer Attributes"
         },
         {
             "name": "colinmollenhour/cache-backend-file",
@@ -1135,57 +1158,39 @@
         {
             "name": "fooman/googleanalyticsplus-implementation-m2",
             "version": "105.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fooman/googleanalyticsplus-implementation-m2.git",
-                "reference": "6b39f0cf84b24e54b63f173ea4ba41004c80f50c"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fooman/googleanalyticsplus-implementation-m2/zipball/6b39f0cf84b24e54b63f173ea4ba41004c80f50c",
-                "reference": "6b39f0cf84b24e54b63f173ea4ba41004c80f50c",
-                "shasum": ""
+                "url": "https://repo.magento.com/archives/fooman/googleanalyticsplus-implementation-m2/fooman-googleanalyticsplus-implementation-m2-105.0.1.0.zip",
+                "shasum": "af88254f558b9d6128dd47c9645843ed8a4835cc"
             },
             "require": {
                 "magento/module-google-analytics": "^100.2.0",
                 "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0"
             },
             "require-dev": {
-                "captainhook/captainhook": "^4.2",
-                "fooman/magento2-phpunit-bridge": "^0.7.0",
-                "fooman/phpstan-magento2-magic-methods": "^0.6.0",
-                "magento/magento-coding-standard": "*",
-                "phpunit/phpunit": "^4.1 | ^6.2"
+                "phpunit/phpunit": "^6.2"
             },
             "type": "magento2-module",
             "autoload": {
                 "psr-4": {
-                    "Fooman\\GoogleAnalyticsPlus\\": "src/"
+                    "Fooman\\GoogleAnalyticsPlus\\": ""
                 },
                 "files": [
-                    "src/registration.php"
+                    "registration.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
-            "description": "Additional functionality for the default Magento Google Analytics",
-            "time": "2019-10-08T09:37:27+00:00"
+            "description": "Additional functionality for the default Magento Google Analytics"
         },
         {
             "name": "fooman/googleanalyticsplus-m2",
             "version": "4.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fooman/googleanalyticsplus-m2.git",
-                "reference": "a992707c7dc38f1cd65cdd12dd3d6c60d83d335c"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fooman/googleanalyticsplus-m2/zipball/a992707c7dc38f1cd65cdd12dd3d6c60d83d335c",
-                "reference": "a992707c7dc38f1cd65cdd12dd3d6c60d83d335c",
-                "shasum": ""
+                "url": "https://repo.magento.com/archives/fooman/googleanalyticsplus-m2/fooman-googleanalyticsplus-m2-4.0.4.0.zip",
+                "shasum": "5f7ca4ce6d921c2c712a99f2f81fb7fb9d40f44d"
             },
             "require": {
                 "fooman/googleanalyticsplus-implementation-m2": "105.0.1",
@@ -1193,12 +1198,10 @@
                 "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0"
             },
             "type": "metapackage",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
-            "description": "Additional functionality for the default Magento Google Analytics",
-            "time": "2019-10-08T10:58:12+00:00"
+            "description": "Additional functionality for the default Magento Google Analytics"
         },
         {
             "name": "google/recaptcha",
