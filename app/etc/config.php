@@ -245,9 +245,11 @@ return [
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
         'Mageplaza_Core' => 1,
+        'Mageplaza_BannerSlider' => 0,
         'Mageplaza_Smtp' => 1,
         'Magestat_SigninPhoneNumber' => 0,
         'Moonlay_CustomHome' => 1,
+        'Moonlay_CustomerAttribute' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1,
         'Yotpo_Yotpo' => 1
