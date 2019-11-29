@@ -8,6 +8,26 @@
     color: #505050;
 }
 
+.breadcrumbs a:visited {
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs a:active {
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs strong {
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
+.breadcrumbs .item:not(:last-child):after {
+    font-size: 15px;
+    line-height: 23px;
+}
+
 h1.page-title {
     color: #000000;
     font-size: 35px  !important;
