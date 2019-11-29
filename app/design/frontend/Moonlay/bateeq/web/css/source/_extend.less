@@ -21,6 +21,32 @@
 /******************** Style for login & register *********************/
 
 /* Global style */
+
+.div-name-kana-frist
+{
+  width: 48%;
+  float: left;
+}
+
+.div-name-kana-last
+{
+  width: 48%;
+  float: right;
+}
+
+.input-text-name-jpn {
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 8px 0 !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  border-bottom: 2px solid #87929d !important;
+}
+
+.regis-margin-buttom-kana{
+  margin-bottom: 20px !important;
+}
+
 .field-name-firstname,
 .field-name-lastname {
   position: relative;
@@ -225,6 +251,18 @@
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .div-name-kana-frist
+  {
+    width: 100%;
+    float: left;
+  }
+
+  .div-name-kana-last
+  {
+    width: 100%;
+    float: right;
+  }
+  
   .chekboxTandCRegis {
     margin-bottom: 20px;
   }
@@ -262,7 +300,7 @@
 
   .center {
     width: 100% !important;
-    margin: 0 !important;
+    margin: 0 ;
     position: relative !important;
     top: 100px !important;
     left: 50% !important;
@@ -300,6 +338,7 @@
   .register-center {
     width: 60% !important;
     transform: translate(37%, 1%);
+    margin-top: 200px;
   }
 
   #lastname-error {
@@ -321,11 +360,10 @@
 
   .center {
     width: 60% !important;
-    margin: 0 !important;
     position: relative !important;
     top: 100px !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -30%) !important;
   }
 
   .btn-login {
