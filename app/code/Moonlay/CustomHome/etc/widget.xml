@@ -23,12 +23,20 @@
                 <label>English Title for Men</label>
             </parameter>
 
-            <parameter name="women_jp" xsi:type="text" required="true" visible="true" sort_order="50">
+            <parameter name="men_url" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>URL for Men's Collection</label>
+            </parameter>
+
+            <parameter name="women_jp" xsi:type="text" required="true" visible="true" sort_order="60">
                 <label>Japanese Title for Women</label>
             </parameter>
 
-            <parameter name="women_en" xsi:type="text" required="true" visible="true" sort_order="60">
+            <parameter name="women_en" xsi:type="text" required="true" visible="true" sort_order="70">
                 <label>English Title for Women</label>
+            </parameter>
+
+            <parameter name="women_url" xsi:type="text" required="true" visible="true" sort_order="80">
+                <label>URL for Women's Collection</label>
             </parameter>
 		</parameters>
 	</widget>
