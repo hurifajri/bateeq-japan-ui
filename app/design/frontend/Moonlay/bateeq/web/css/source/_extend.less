@@ -234,7 +234,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   font-style: normal !important;
   line-height: normal !important;
   letter-spacing: normal !important;
-  color: #004376 !important;
+  color: #000000 !important;
 }
 
 .margin-title-register {
@@ -255,7 +255,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   line-height: 2.33 !important;
   letter-spacing: normal !important;
   text-align: center !important;
-  color: #004376 !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   height: 40px !important;
@@ -324,7 +324,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   line-height: normal !important;
   letter-spacing: normal !important;
   text-align: right !important;
-  color: #004376 !important;
+  color: #000000 !important;
 }
 
 .title-login .jpn {
@@ -336,7 +336,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   line-height: 2.33 !important;
   letter-spacing: normal !important;
   text-align: center !important;
-  color: #004376 !important;
+  color: #000000 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   height: 40px !important;
@@ -395,8 +395,8 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   }
 
   .btn-register {
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 
   .btn-reg-div {
@@ -415,8 +415,8 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .btn-login {
     width: 100% !important;
     height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 }
 
@@ -468,8 +468,8 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .btn-register {
     width: 115px !important;
     height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 
   .center {
@@ -483,8 +483,8 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .btn-login {
     width: 115px !important;
     height: 35px !important;
-    background: #004376 !important;
-    border: 1px solid #004376 !important;
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
   }
 }
 
@@ -575,7 +575,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   font-weight: 600;
   //line-height: 2.33;
   line-height: 1.33;
-  color: #004376;
+  color: #000000;
 }
 
 .title h2:nth-child(2),
@@ -725,7 +725,7 @@ button.more {
 @media only screen and (min-width: 768px) {
   .text-container {
     line-height: 0.5 !important;
-    position: fixed;
+    position: absolute;
     width: 56%;
     z-index: 2000;
     top: 79px;
@@ -810,6 +810,12 @@ button.more {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+  }
+
   .page-header {
     margin-bottom: 0;
     position: static;
@@ -865,9 +871,8 @@ button.more {
   }
 
   .nav-sections {
-    // display: none;
     margin-bottom: 0;
-    position: fixed;
+    position: static;
     z-index: 1000;
     width: 100%;
     top: 72px;
