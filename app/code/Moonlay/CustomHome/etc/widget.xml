@@ -60,4 +60,20 @@
             </parameter>
 		</parameters>
 	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\Title" id="moonlay_customhome_title">
+		<label>Custom: Title H2</label>
+		<description>
+            Homepage Title H2 || Text H2
+        </description>
+		<parameters>
+			<parameter name="title_jp" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Japanese Title</label>
+            </parameter>
+
+            <parameter name="title_en" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>English Title</label>
+            </parameter>
+		</parameters>
+	</widget>
 </widgets>
