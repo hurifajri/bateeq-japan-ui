@@ -18,6 +18,120 @@
   font-display: swap;
 }
 
+/******************** Style for forgot password *********************/
+body.customer-account-createpassword div.page-title-wrapper {
+  display: none;
+}
+
+.title-change-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px ;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-change-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px ;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+}
+
+.btn-change-password {
+  width: 100% !important;
+  height: 35px !important;
+  background: #004376 !important;
+  border: 1px solid #004376 !important;
+}
+
+/* Global style */
+body.customer-account-forgotpassword div.page-title-wrapper {
+  display: none;
+}
+
+.main-forgot-pss{
+  margin-bottom: 50px !important;
+}
+
+.btn-frgt
+{
+  float: right !important;
+}
+
+.title-frgt-pass .jpn {
+  font-family: PingFangSC !important;
+  font-size: 30px ;
+  font-weight: 600 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.33 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #004376 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+}
+
+.title-frgt-pass .eng {
+  font-family: Montserrat !important;
+  font-size: 25px ;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 2.8 !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  color: #505050 !important;
+  margin-top: 0 !important;
+  margin-bottom: 50px !important;
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .btn-frgt
+  {
+    width: 100%;
+  }
+
+  .title-frgt-pass .jpn {
+    font-size: 20px;
+  }
+  
+  .title-frgt-pass .eng {
+    font-size: 15px;
+  }
+
+  .title-change-pass .jpn {
+    font-size: 20px;
+  }
+  
+  .title-change-pass .eng {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-forgot-pss{
+    width: 50%;
+    transform: translate(50%, 1%);
+  }
+}
+
 /******************** Style for login & register *********************/
 
 /* Global style */
@@ -213,10 +327,6 @@
   color: #004376 !important;
 }
 
-.title-login {
-  margin-top: 175px;
-}
-
 .title-login .jpn {
   font-family: PingFangSC !important;
   font-size: 30px !important;
@@ -343,7 +453,6 @@
   .register-center {
     width: 60% !important;
     transform: translate(37%, 1%);
-    margin-top: 200px;
   }
 
   #lastname-error {
@@ -703,7 +812,7 @@ button.more {
 @media only screen and (min-width: 768px) {
   .page-header {
     margin-bottom: 0;
-    position: fixed;
+    position: static;
     z-index: 1000;
     width: 100%;
     background: #fff;
