@@ -497,7 +497,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .text-container {
   line-height: 0.5 !important;
   position: absolute;
-  z-index: 2000;
+  z-index: 2 !important;
   right: 0;
 }
 
@@ -910,6 +910,10 @@ button.more {
     border-top: none !important;
   }
 
+  .wishlist-index-index .product-item-inner {
+    margin: 9px -4px 0 -5px;
+  }
+
   .sticky {
     position: fixed !important;
     top: 0;
@@ -919,7 +923,6 @@ button.more {
   .page-header {
     margin-bottom: 0;
     position: static;
-    z-index: 1000;
     width: 100%;
     background: #fff;
   }
@@ -931,20 +934,20 @@ button.more {
   }
 
   .header.panel > .header.links {
-    width: 20%;
+    width: 30%;
   }
 
   .minicart-wrapper {
-    width: 2%;
+    width: 7%;
   }
 
   .logo {
-    width: 10%;
+    width: 15%;
     margin: 0px auto 0 0;
   }
 
   .block-search {
-    width: 60%;
+    width: 40%;
   }
 
   .minicart-wrapper {
@@ -973,9 +976,9 @@ button.more {
   .nav-sections {
     margin-bottom: 0;
     position: static;
-    z-index: 1000;
     width: 100%;
     top: 72px;
+    z-index: 1 !important;
   }
 
   .customer-welcome .action.switch {
@@ -1013,5 +1016,22 @@ button.more {
 @media only screen and (min-width: 1200px) {
   .page-layout-1column .block.widget .products-grid .product-item {
     margin-left: 6%;
+  }
+
+  .header.panel > .header.links {
+    width: 20%;
+  }
+
+  .minicart-wrapper {
+    width: 5%;
+  }
+
+  .logo {
+    width: 10%;
+    margin: 0px auto 0 0;
+  }
+
+  .block-search {
+    width: 50%;
   }
 }
