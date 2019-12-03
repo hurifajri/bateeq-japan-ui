@@ -139,8 +139,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   width: 100%;
 }
 
-.div-name-kana-frist
-{
+.div-name-kana-frist {
   width: 48%;
   float: left;
 }
@@ -497,11 +496,16 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 /* Global style */
 
+.top-container {
+  position: relative;
+}
+
 .text-container {
-  line-height: 0.5 !important;
   position: absolute;
   z-index: 2 !important;
   right: 0;
+  top: 0;
+  height: 47px;
 }
 
 .running-text {
@@ -510,11 +514,11 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 47px;
   letter-spacing: normal;
   color: #505050;
   background-color: #f0f0f0;
-  padding: 5px 0;
+  padding: 0;
 }
 
 #banner-slider-carousel {
@@ -713,8 +717,20 @@ button.more {
   width: 100%;
 }
 
+.footer-logo-container {
+  text-align: center !important;
+}
+
+.block.newsletter {
+  margin-top: 20px !important;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .text-container {
+    width: 100% !important;
+  }
+
   .banner {
     height: 100%;
     min-height: 190px;
@@ -727,37 +743,24 @@ button.more {
 
 /* iPad portrait and landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .text-container {
-    top: 96px !important;
-  }
 }
 
 /* iPad portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .text-container {
-    width: 80% !important;
-  }
 }
 
 /* iPad Pro portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .text-container {
-    width: 80% !important;
-  }
 }
 
 /* iPad Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .text-container {
-    width: 48% !important;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .text-container {
-    width: 56%;
-    top: 79px;
+    width: 73%;
   }
 
   .running-text {
@@ -777,16 +780,29 @@ button.more {
   .video iframe {
     height: 500px;
   }
+
+  .footer-logo-container {
+    float: right;
+    width: 350px;
+  }
+
+  .block.newsletter {
+    clear: both;
+    width: 350px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .text-container {
+    width: 80%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .text-container {
-    width: 73%;
+    width: 82%;
   }
 
   .about {
@@ -925,8 +941,6 @@ button.more {
 
   .page-header {
     margin-bottom: 0;
-    position: static;
-    width: 100%;
     background: #fff;
   }
 
@@ -978,9 +992,6 @@ button.more {
 
   .nav-sections {
     margin-bottom: 0;
-    position: static;
-    width: 100%;
-    top: 72px;
     z-index: 1 !important;
   }
 
