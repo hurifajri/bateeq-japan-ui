@@ -25,7 +25,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 
 .title-change-pass .jpn {
   font-family: PingFangSC !important;
-  font-size: 30px ;
+  font-size: 30px;
   font-weight: 600 !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -40,7 +40,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 
 .title-change-pass .eng {
   font-family: Montserrat !important;
-  font-size: 25px ;
+  font-size: 25px;
   font-weight: normal !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -63,18 +63,17 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   display: none;
 }
 
-.main-forgot-pss{
+.main-forgot-pss {
   margin-bottom: 50px !important;
 }
 
-.btn-frgt
-{
+.btn-frgt {
   float: right !important;
 }
 
 .title-frgt-pass .jpn {
   font-family: PingFangSC !important;
-  font-size: 30px ;
+  font-size: 30px;
   font-weight: 600 !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -89,7 +88,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 .title-frgt-pass .eng {
   font-family: Montserrat !important;
-  font-size: 25px ;
+  font-size: 25px;
   font-weight: normal !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -103,15 +102,14 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-  .btn-frgt
-  {
+  .btn-frgt {
     width: 100%;
   }
 
   .title-frgt-pass .jpn {
     font-size: 20px;
   }
-  
+
   .title-frgt-pass .eng {
     font-size: 15px;
   }
@@ -119,14 +117,14 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .title-change-pass .jpn {
     font-size: 20px;
   }
-  
+
   .title-change-pass .eng {
     font-size: 15px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .main-forgot-pss{
+  .main-forgot-pss {
     width: 50%;
     transform: translate(50%, 1%);
   }
@@ -498,6 +496,9 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 .text-container {
   line-height: 0.5 !important;
+  position: absolute;
+  z-index: 2000;
+  right: 0;
 }
 
 .running-text {
@@ -721,15 +722,39 @@ button.more {
   }
 }
 
+/* iPad portrait and landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-container {
+    top: 96px !important;
+  }
+}
+
+/* iPad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-container {
+    width: 80% !important;
+  }
+}
+
+/* iPad Pro portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .text-container {
+    width: 80% !important;
+  }
+}
+
+/* iPad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-container {
+    width: 48% !important;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .text-container {
-    line-height: 0.5 !important;
-    position: absolute;
     width: 56%;
-    z-index: 2000;
     top: 79px;
-    right: 0;
   }
 
   .running-text {
@@ -757,6 +782,10 @@ button.more {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .text-container {
+    width: 73%;
+  }
+
   .about {
     padding: 50px 150px;
   }
@@ -765,12 +794,31 @@ button.more {
 /******************** Style for Moonlay/bateeq Theme *********************/
 
 /* Global style */
+.action.primary,
+.action.primary:hover {
+  background: #ff7d09;
+  border: 1px solid #ff7d09;
+  border-radius: 5px !important;
+}
+
 .page-header {
   margin-bottom: 0;
 }
 
 .page-header .panel.wrapper {
   background-color: transparent;
+}
+
+.block.newsletter .action.subscribe {
+  border-radius: 0 5px 5px 0 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  color: #000000 !important;
+}
+
+.block.newsletter input {
+  border-radius: 5px 0 0 5px;
+  background: #000000;
 }
 
 .block-search input {
@@ -797,6 +845,11 @@ button.more {
   color: #313131;
 }
 
+.page-footer,
+.footer.content {
+  background-color: #000000;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   .logo {
@@ -806,10 +859,57 @@ button.more {
   .minicart-wrapper {
     margin-top: 12px;
   }
+
+  .footer.content .links > li {
+    background: #000000 !important;
+  }
+
+  .footer.content .links strong,
+  .footer.content .links a,
+  .footer.content .links a:visited {
+    color: #ffffff !important;
+  }
+
+  .copyright {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .navigation .level0.parent:hover > .submenu,
+  .navigation .level0 .submenu .submenu {
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+  }
+
+  .products-grid .product-item-info:hover,
+  .products-grid .product-item-info.active {
+    box-shadow: none !important;
+    border: solid 5px #c1a358 !important;
+  }
+
+  .block.widget .products-grid .product-item .product-item-inner,
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item
+    .product-item-inner,
+  .page-layout-3columns
+    .block.widget
+    .products-grid
+    .product-item
+    .product-item-inner {
+    box-shadow: none !important;
+    margin: 9px -4px 0 -5px !important;
+  }
+
+  .products-grid .product-item-inner {
+    border: solid 5px #c1a358;
+    border-top: none !important;
+  }
+
   .sticky {
     position: fixed !important;
     top: 0;
@@ -886,8 +986,9 @@ button.more {
     min-width: 200px;
   }
 
-  .page-footer {
-    background-color: #505050;
+  .footer.content .links a:hover {
+    text-decoration: none;
+    color: #ff7d09 !important;
   }
 
   .footer.content .links a,
