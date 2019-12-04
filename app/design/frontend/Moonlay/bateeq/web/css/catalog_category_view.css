@@ -103,3 +103,11 @@ h1.page-title {
     padding-top : 5px;
     border-top: 0.5px solid #000000;
 }
+
+.product-image-photo {
+    max-width: 99%;
+}
+
+.product.details.product-item-details {
+    padding: 3%;
+}

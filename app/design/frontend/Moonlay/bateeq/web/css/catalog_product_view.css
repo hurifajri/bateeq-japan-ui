@@ -70,7 +70,7 @@ h1.page-title {
 .product-info-main {
     border-radius: 5px;
     border: solid 0.5px #979797;
-    padding: 20px;
+    padding: 10px;
 }
 
 .product-item-info {
@@ -126,4 +126,36 @@ input[type=number]::-webkit-inner-spin-button {
 
 .box-tocart .input-text.qty {
     width: 75px;
+}
+
+@media screen and (min-width: 1040px) {
+    #product-review-container ol {
+        display: inline-block;
+    }
+    
+    .review-title {
+        margin-bottom: 20px;
+    }
+    
+    .review-ratings {
+        float: unset;
+        margin-bottom: 20px;
+    }
+    
+    #product-review-container {
+        display: inline-flex;
+        width: 52%;
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 1px solid black;
+    }
+    
+    .review-ratings~.review-content, .review-ratings~.review-details {
+        margin-left: 0px;
+    }
+    
+    .block.review-add {
+        display: inline-flex;
+        width: 40%;
+    }
 }
