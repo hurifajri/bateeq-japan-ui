@@ -284,6 +284,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 .login-container {
   position: relative;
+  margin-top: 100px;
 }
 
 .login-container .fieldset > .field > .control {
@@ -429,7 +430,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .form.form-orders-search,
   .login-container,
   #form-validate {
-    margin-top: 150px !important;
+    margin-top: 50px !important;
   }
 }
 
@@ -502,7 +503,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 .text-container {
   position: absolute;
-  z-index: 2 !important;
+  z-index: 3 !important;
   right: 0;
   top: -2px;
   height: 47px;
@@ -905,6 +906,51 @@ button.en {
   color: #313131;
 }
 
+.minicart-items .product-item-details .price-including-tax,
+.minicart-items .product-item-details .price-excluding-tax,
+.block-minicart .subtotal,
+.block-minicart .items-total,
+.block-minicart .subtitle.empty,
+.minicart-items .product-item-pricing .label,
+.minicart-items .product-item-name a {
+  color: #000000;
+}
+
+.amount price-container {
+  color: #d0021b !important;
+}
+
+.minicart-items .update-cart-item {
+  border-radius: 5px;
+  border: solid 0.5px #ff7d09;
+  background: transparent;
+  color: #ff7d09;
+}
+
+.minicart-items .product-item-name a:hover,
+.block-minicart .block-content > .actions > .secondary a:hover {
+  text-decoration: none !important;
+}
+
+.block-minicart .block-content > .actions > .secondary {
+  text-align: center;
+  /* width: 185px; */
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: solid 0.5px #ff7d09;
+}
+
+.block-minicart .block-content > .actions > .secondary a {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ff7d09 !important;
+}
+
 .page-footer,
 .footer.content {
   background-color: #000000;
@@ -918,6 +964,15 @@ button.en {
 
   .minicart-wrapper {
     margin-top: 12px;
+  }
+
+  .block-collapsible-nav {
+    top: -1px !important;
+  }
+
+  .account .page-main,
+  .cms-privacy-policy .page-main {
+    padding-top: 60px !important;
   }
 
   .footer.content .links > li {
@@ -942,6 +997,48 @@ button.en {
   .navigation .level0 .submenu .submenu {
     border-radius: 5px;
     box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+  }
+
+  .cart-summary {
+    margin-top: 51px;
+  }
+
+  .opc-block-summary {
+    margin-top: 18px;
+  }
+
+  .cart-summary,
+  .opc-block-summary {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+  }
+
+  .cart-summary .checkout-methods-items .action.primary.checkout {
+    border-radius: 5px;
+    background-color: #000000;
+    border: none;
+  }
+
+  a.multicheckout {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  .cart.table-wrapper .cart > .item:last-child {
+    border-bottom: none !important;
+  }
+
+  .cart.table-wrapper {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    padding: 25px;
   }
 
   .products-grid .product-item-info:hover,
@@ -1033,7 +1130,7 @@ button.en {
 
   .nav-sections {
     margin-bottom: 0;
-    z-index: 1 !important;
+    z-index: 2 !important;
   }
 
   .customer-welcome .action.switch {
