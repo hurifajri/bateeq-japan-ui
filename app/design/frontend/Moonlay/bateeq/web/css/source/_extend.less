@@ -18,7 +18,31 @@
   font-display: swap;
 }
 
-/******************** Style for Account Info *********************/
+body.customer-address-form div.page-title-wrapper {
+  display: none;
+}
+
+body.customer-address-form div.sidebar-additional {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+/******************** Style for Address Info *********************/
+
+
+.changes-defauld-link{
+  color: #000000 !important;
+  font-weight: 600;
+}
+
 .body-table-border{
   border-bottom: 0.5px solid;
 }
@@ -33,7 +57,7 @@
 }
 
 .widt-table-name{
-  width: 18%;
+  width: 24%;
 }
 
 .widt-table{
@@ -111,6 +135,7 @@
   font-style: normal;
   letter-spacing: normal;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 body.customer-address-index div.page-title-wrapper {
@@ -138,11 +163,30 @@ body.customer-account-index div.sidebar-additional {
   .title-account-info{
     display: none;
   }
-
-  
 }
 
 @media only screen and (min-width: 992px) {
+  .div-action{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 0px 20px 40px 20px;
+  }
+  
+  .div-grid-table{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: unset !important;
+  }
+  
+  .div-book{
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: unset !important;
+  }
 
   .div-info-account{
     border: 1px solid #979797;

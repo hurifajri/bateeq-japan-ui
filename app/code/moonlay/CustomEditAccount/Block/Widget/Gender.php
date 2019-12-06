@@ -59,7 +59,7 @@ class Gender extends AbstractWidget
     public function _construct()
     {
         parent::_construct();
-        $this->setTemplate('Moonlay_CustomRegister::widget/gender.phtml');
+        $this->setTemplate('Moonlay_CustomEditAccount::widget/gender.phtml');
     }
 
     /**

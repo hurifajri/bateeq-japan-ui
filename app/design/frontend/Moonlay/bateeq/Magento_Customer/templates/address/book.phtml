@@ -8,7 +8,7 @@
 ?>
 <h2 class="title-edit-account">Address Book</h2>
 
-<div class="block block-addresses-default">
+<div class="block block-addresses-default div-book">
 
     <div class="block-title title2-addres-info"><?= $block->escapeHtml(__('Default Addresses')) ?></div>
 
@@ -25,7 +25,7 @@
                     </address>
                 </div>
                 <div class="box-actions">
-                    <a class="action edit" href="<?= $block->escapeUrl($block->getAddressEditUrl($_pAddsses)) ?>">
+                    <a class="action edit changes-defauld-link" href="<?= $block->escapeUrl($block->getAddressEditUrl($_pAddsses)) ?>">
                         <span><?= $block->escapeHtml(__('Change Billing Address')) ?></span>
                     </a>
                 </div>
@@ -51,7 +51,7 @@
                     </address>
                 </div>
                 <div class="box-actions">
-                    <a class="action edit" href="<?= $block->escapeUrl($block->getAddressEditUrl($_pAddsses)) ?>">
+                    <a class="action edit changes-defauld-link" href="<?= $block->escapeUrl($block->getAddressEditUrl($_pAddsses)) ?>">
                         <span><?= $block->escapeHtml(__('Change Shipping Address')) ?></span>
                     </a>
                 </div>

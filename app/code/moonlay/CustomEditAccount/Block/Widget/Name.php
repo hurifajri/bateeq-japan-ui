@@ -62,7 +62,7 @@ class Name extends AbstractWidget
         parent::_construct();
 
         // default template location
-        $this->setTemplate('Moonlay_CustomRegister::widget/name.phtml');
+        $this->setTemplate('Moonlay_CustomEditAccount::widget/name.phtml');
     }
 
     /**
