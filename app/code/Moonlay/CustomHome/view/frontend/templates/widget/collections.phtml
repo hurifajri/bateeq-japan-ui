@@ -8,9 +8,13 @@
           'Moonlay_CustomHome::images/mcollection.jpg'
         ); ?>' />
         <div class="collection">
-            <a href="#"><?= $block->escapeHtml($block->getData('men_jp')) ?></a>
+            <a href="<?= $block->escapeHtml(
+              $block->getData('men_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('men_jp')) ?></a>
             <br />
-            <a href="#"><?= $block->escapeHtml($block->getData('men_en')) ?></a>
+            <a href="<?= $block->escapeHtml(
+              $block->getData('men_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('men_en')) ?></a>
         </div>
     </div>
     <div class="item-collection banner">
@@ -18,13 +22,13 @@
           'Moonlay_CustomHome::images/wcollection.jpg'
         ); ?>' />
         <div class="collection">
-            <a href="#"><?= $block->escapeHtml(
-              $block->getData('women_jp')
-            ) ?></a>
+            <a href="<?= $block->escapeHtml(
+              $block->getData('women_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('women_jp')) ?></a>
             <br />
-            <a href="#"><?= $block->escapeHtml(
-              $block->getData('women_en')
-            ) ?></a>
+            <a href="<?= $block->escapeHtml(
+              $block->getData('women_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('women_en')) ?></a>
         </div>
     </div>
 </div>
