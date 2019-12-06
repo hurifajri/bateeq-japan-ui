@@ -16,13 +16,7 @@
                 <p class="title-account-info">Full Name</p>
                 <p class="value-account-info"><?= $block->escapeHtml($block->getName()) ?></p>
             </div>
-            <div>
-                <p class="title-account-info">Full Name (Kana)</p>
-                <p class="value-account-info">
-                    <?= $block->escapeHtml($block->getAttribute('firstname_kana')) ?>
-                    <?= $block->escapeHtml($block->getAttribute('lastname_kana')) ?>
-                </p>
-            </div>
+            
             <div>
                 <p class="title-account-info">Email</p>
                 <p class="value-account-info"><?= $block->escapeHtml($block->getCustomer()->getEmail()) ?></p>
