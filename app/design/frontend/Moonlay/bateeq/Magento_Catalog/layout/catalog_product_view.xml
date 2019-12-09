@@ -3,8 +3,8 @@
     <head>
         <css src="css/catalog_product_view.css" />
     </head>
-    <move element="page.main.title" destination="product.info.main" before="-"/>
     <referenceContainer name="product.info.main">
         <block class="Magento\Catalog\Block\Product\View" name="product.name" template="Magento_Catalog::productData.phtml" before="-" />
     </referenceContainer>
+    <move element="product.info.review" destination="product.info.main" after="product.info.price"/>
 </page>
