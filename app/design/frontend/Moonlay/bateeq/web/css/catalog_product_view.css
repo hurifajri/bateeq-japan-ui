@@ -42,31 +42,6 @@ h1.page-title {
     letter-spacing: normal  !important;
 }
 
-.swatch-select {
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    overflow: -moz-hidden-unscrollable;
-    background: url(images/arrow-ud.png) no-repeat right white !important;
-    border: 2px double white;
-    display: inline-block;
-    position: relative;
-}
-
-.swatch-select select {
-    background: transparent;
-    -moz-appearance: none; /* Firefox */
-    -webkit-appearance: none; /* Safari and Chrome */
-    appearance: none;
-    width: 100px;
-    font-size: 11px;
-    border: 0;
-    height: 17px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
 .product.media {
     width: 56% !important;
 }
