@@ -38,10 +38,6 @@
     border: 1px solid #ff7d09;
 }
 
-.product-item .action.towishlist:before {
-    color: #ec2324;
-}
-
 .breadcrumbs a:active {
     color: #505050;
     text-decoration: none;
