@@ -71,20 +71,20 @@ body.customer-address-form div.field-name-lastname label.label {
   display: none;
 }
 
-.label-check-box{
+.label-check-box {
   font-family: "Montserrat";
   color: #000000;
 }
 
-.btn-edit-address{
+.btn-edit-address {
   background: #000000 !important;
 }
 
-.width-buttom{
+.width-buttom {
   width: 100%;
 }
 
-.title2-addres-create{
+.title2-addres-create {
   border-bottom: unset !important;
   height: 30px;
   font-family: "Montserrat";
@@ -97,7 +97,7 @@ body.customer-address-form div.field-name-lastname label.label {
   color: #000000;
 }
 
-.width-main{
+.width-main {
   width: 100% !important;
 }
 
@@ -120,28 +120,27 @@ body.customer-address-form div.sidebar-additional {
 }
 
 @media only screen and (max-width: 767px) {
-
 }
 
 @media only screen and (min-width: 992px) {
-  .main-address-create{
+  .main-address-create {
     margin-top: 0px;
     border: 1px solid;
     padding: 50px;
   }
 
-  .btn-edit-address{
+  .btn-edit-address {
     background: #000000;
     float: initial !important;
     padding: 8px 20px;
   }
 
-  .checkbox-lef{
+  .checkbox-lef {
     width: 50%;
     float: left;
   }
 
-  .label-check-box{
+  .label-check-box {
     font-size: 18px;
   }
 }
@@ -1279,6 +1278,24 @@ button.en {
 /******************** Style for Moonlay/bateeq Theme *********************/
 
 /* Global style */
+.checkout-shipping-method .actions-toolbar .action.primary {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000 !important;
+  border: 1px solid #000 !important;
+  line-height: 0;
+}
+
+.product-item-link {
+  display: inline-block;
+  min-height: 38px !important;
+}
+
+.product-item {
+  color: #000;
+}
+
 .action.primary,
 .action.primary:focus {
   background: #ff7d09;
@@ -1435,6 +1452,19 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .page-layout-1column .block.widget .products-grid .product-item:first-child,
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(4n + 1) {
+    margin-left: 0 !important;
+  }
+
+  .page-layout-1column .block.widget .products-grid .product-item {
+    margin-left: 2%;
+    width: calc((100% - 6%) / 4);
+  }
+
   .navigation .level0.parent:hover > .submenu,
   .navigation .level0 .submenu .submenu {
     border-radius: 5px;
@@ -1589,6 +1619,13 @@ button.en {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(5n + 1) {
+    margin-left: 2%;
+  }
+
   .minicart-wrapper {
     width: 5%;
   }
