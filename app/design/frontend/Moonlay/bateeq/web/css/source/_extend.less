@@ -185,21 +185,21 @@ body.customer-address-form div.field-name-lastname label.label {
   display: none;
 }
 
-.label-check-box{
+.label-check-box {
   font-family: "Montserrat";
   color: #000000;
 }
 
-.btn-edit-address{
+.btn-edit-address {
   background: #000000 !important;
   border-color: #000000 !important;
 }
 
-.width-buttom{
+.width-buttom {
   width: 100%;
 }
 
-.title2-addres-create{
+.title2-addres-create {
   border-bottom: unset !important;
   height: 30px;
   font-family: "Montserrat";
@@ -212,7 +212,7 @@ body.customer-address-form div.field-name-lastname label.label {
   color: #000000;
 }
 
-.width-main{
+.width-main {
   width: 100% !important;
 }
 
@@ -235,29 +235,28 @@ body.customer-address-form div.sidebar-additional {
 }
 
 @media only screen and (max-width: 767px) {
-
 }
 
 @media only screen and (min-width: 992px) {
-  .main-address-create{
+  .main-address-create {
     margin-top: 0px;
     border: 1px solid;
     padding: 50px;
     border-radius: 5px;
   }
 
-  .btn-edit-address{
+  .btn-edit-address {
     background: #000000;
     float: initial !important;
     padding: 8px 20px;
   }
 
-  .checkbox-lef{
+  .checkbox-lef {
     width: 50%;
     float: left;
   }
 
-  .label-check-box{
+  .label-check-box {
     font-size: 18px;
   }
 }
@@ -1411,6 +1410,34 @@ button.en {
 /******************** Style for Moonlay/bateeq Theme *********************/
 
 /* Global style */
+.checkout-shipping-method .actions-toolbar .action.primary {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000 !important;
+  border: 1px solid #000 !important;
+  line-height: 0;
+}
+
+
+.opc-wrapper .action-select-shipping-item {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 1.2rem;
+  box-shadow: unset !important;
+}
+
+.product-item-link {
+  display: inline-block;
+  min-height: 38px !important;
+}
+
+.product-item {
+  color: #000;
+}
+
 .action.primary,
 .action.primary:focus {
   background: #ff7d09;
@@ -1530,6 +1557,13 @@ button.en {
   background-color: #000000;
 }
 
+.update_cart_action {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  box-shadow: unset !important;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   .logo {
@@ -1567,6 +1601,147 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .cart-empty {
+    text-align: center !important;
+    margin-top: 50px !important;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 350px;
+    padding: 50px 25px;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .opc-progress-bar {
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px 2px #f4f4f4;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 40px 0;
+  }
+
+  .opc-progress-bar-item:before {
+    height: 1px;
+  }
+
+  .opc-progress-bar-item._active:before {
+    background: #e4e4e4;
+    border-color: none;
+    border: 1px solid #ccc;
+  }
+
+  .opc-progress-bar-item {
+    width: 50% !important;
+    margin: 0;
+  }
+
+  .opc-progress-bar-item > span:before {
+    display: none;
+  }
+
+  .opc-progress-bar-item > span {
+    color: #e4e4e4 !important;
+  }
+
+  .opc-progress-bar-item._active > span {
+    color: #000 !important;
+  }
+
+  .opc-progress-bar-item > span:after {
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    font-size: 1.2rem;
+    line-height: 20px;
+    background: #e4e4e4;
+    color: #e4e4e4;
+  }
+
+  .opc-progress-bar-item._active > span:after {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+  }
+
+  .opc-wrapper .step-title {
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #000000;
+    border-bottom: none;
+  }
+
+  .opc-block-summary > .title {
+    font-size: 25px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: left;
+  }
+
+  .opc-block-summary .items-in-cart > .title {
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: left;
+  }
+
+  .opc-wrapper .step-content {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    background-color: #ffffff;
+    padding: 25px;
+  }
+
+  .opc-block-summary {
+    margin-top: 50px !important;
+  }
+
+  .new-address-popup {
+    text-align: center;
+  }
+
+  .opc-wrapper .action-show-popup {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .opc-wrapper .shipping-address-item.selected-item {
+    border-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
+    background-color: #ffffff;
+  }
+
+  .opc-wrapper .shipping-address-item.selected-item:after {
+    background: #fff;
+    color: #000;
+  }
+
+  .page-layout-1column .block.widget .products-grid .product-item:first-child,
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(4n + 1) {
+    margin-left: 0 !important;
+  }
+
+  .page-layout-1column .block.widget .products-grid .product-item {
+    margin-left: 2%;
+    width: calc((100% - 6%) / 4);
+  }
+
   .navigation .level0.parent:hover > .submenu,
   .navigation .level0 .submenu .submenu {
     border-radius: 5px;
@@ -1721,6 +1896,13 @@ button.en {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .page-layout-1column
+    .block.widget
+    .products-grid
+    .product-item:nth-child(5n + 1) {
+    margin-left: 2%;
+  }
+
   .minicart-wrapper {
     width: 5%;
   }
