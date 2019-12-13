@@ -33,6 +33,8 @@
         "magento/module-wishlist-sample-data": "100.3.*",
         "magento/product-community-edition": "2.3.3",
         "magento/sample-data-media": "100.3.*",
+        "mageplaza/magento-2-product-slider": "^2.0",
+        "mageplaza/module-ajax-layered-navigation": "^1.0",
         "mageplaza/module-banner-slider": "^2.0",
         "magestat/module-sign-in-with-phone-number": "^1.1",
         "sendgrid/sendgrid": "^7.3",

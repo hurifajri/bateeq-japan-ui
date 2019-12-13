@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9d4dd2253858458b64d033a4880d044",
+    "content-hash": "492e4e987789f11737323fc03a798bca",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -1135,39 +1135,57 @@
         {
             "name": "fooman/googleanalyticsplus-implementation-m2",
             "version": "105.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fooman/googleanalyticsplus-implementation-m2.git",
+                "reference": "6b39f0cf84b24e54b63f173ea4ba41004c80f50c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/fooman/googleanalyticsplus-implementation-m2/fooman-googleanalyticsplus-implementation-m2-105.0.1.0.zip",
-                "shasum": "af88254f558b9d6128dd47c9645843ed8a4835cc"
+                "url": "https://api.github.com/repos/fooman/googleanalyticsplus-implementation-m2/zipball/6b39f0cf84b24e54b63f173ea4ba41004c80f50c",
+                "reference": "6b39f0cf84b24e54b63f173ea4ba41004c80f50c",
+                "shasum": ""
             },
             "require": {
                 "magento/module-google-analytics": "^100.2.0",
                 "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.2"
+                "captainhook/captainhook": "^4.2",
+                "fooman/magento2-phpunit-bridge": "^0.7.0",
+                "fooman/phpstan-magento2-magic-methods": "^0.6.0",
+                "magento/magento-coding-standard": "*",
+                "phpunit/phpunit": "^4.1 | ^6.2"
             },
             "type": "magento2-module",
             "autoload": {
                 "psr-4": {
-                    "Fooman\\GoogleAnalyticsPlus\\": ""
+                    "Fooman\\GoogleAnalyticsPlus\\": "src/"
                 },
                 "files": [
-                    "registration.php"
+                    "src/registration.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
-            "description": "Additional functionality for the default Magento Google Analytics"
+            "description": "Additional functionality for the default Magento Google Analytics",
+            "time": "2019-10-08T09:37:27+00:00"
         },
         {
             "name": "fooman/googleanalyticsplus-m2",
             "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fooman/googleanalyticsplus-m2.git",
+                "reference": "a992707c7dc38f1cd65cdd12dd3d6c60d83d335c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/fooman/googleanalyticsplus-m2/fooman-googleanalyticsplus-m2-4.0.4.0.zip",
-                "shasum": "5f7ca4ce6d921c2c712a99f2f81fb7fb9d40f44d"
+                "url": "https://api.github.com/repos/fooman/googleanalyticsplus-m2/zipball/a992707c7dc38f1cd65cdd12dd3d6c60d83d335c",
+                "reference": "a992707c7dc38f1cd65cdd12dd3d6c60d83d335c",
+                "shasum": ""
             },
             "require": {
                 "fooman/googleanalyticsplus-implementation-m2": "105.0.1",
@@ -1175,10 +1193,12 @@
                 "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0"
             },
             "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
-            "description": "Additional functionality for the default Magento Google Analytics"
+            "description": "Additional functionality for the default Magento Google Analytics",
+            "time": "2019-10-08T10:58:12+00:00"
         },
         {
             "name": "google/recaptcha",
@@ -11258,6 +11278,88 @@
                 "framework"
             ],
             "time": "2019-07-26T16:43:11+00:00"
+        },
+        {
+            "name": "mageplaza/magento-2-product-slider",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-product-slider.git",
+                "reference": "b7ac3d86c0eed14c56fa1232a63147b537af7fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-product-slider/zipball/b7ac3d86c0eed14c56fa1232a63147b537af7fa0",
+                "reference": "b7ac3d86c0eed14c56fa1232a63147b537af7fa0",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.4.4"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Productslider\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Magento 2 Product Slider",
+            "time": "2019-05-27T11:15:48+00:00"
+        },
+        {
+            "name": "mageplaza/module-ajax-layered-navigation",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-ajax-layered-navigation.git",
+                "reference": "dbe40dffd158820c172f9b48dab5479ade8aca9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-ajax-layered-navigation/zipball/dbe40dffd158820c172f9b48dab5479ade8aca9c",
+                "reference": "dbe40dffd158820c172f9b48dab5479ade8aca9c",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.4.4"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\AjaxLayer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Magento 2 Ajax Layered Navigation Extension",
+            "time": "2019-06-10T02:49:59+00:00"
         },
         {
             "name": "mageplaza/module-banner-slider",
