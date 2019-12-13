@@ -18,6 +18,120 @@
   font-display: swap;
 }
 
+/******************** Style for Wishlist *********************/
+body.wishlist-index-index a.product-item-link{
+  color: #505050 !important;
+}
+
+body.wishlist-index-index span.price-final_price span.price-wrapper {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+body.wishlist-index-index button.primary{
+  font-family: "Montserrat";
+  font-size: 12px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal !important;
+  letter-spacing: normal;
+}
+
+.btn-remove-wishlist{
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background: #ffffff;
+}
+
+body.wishlist-index-index div.qty {
+  display: none !important;
+}
+
+.products-grid.wishlist .product-item-actions .action.edit, .products-grid.wishlist .product-item-actions .action.delete:before{
+  display: none;
+}
+
+body.wishlist-index-index div.product-item-actions a.edit {
+  display: none !important;
+}
+
+body.wishlist-index-index div.comment-box {
+  display: none;
+}
+
+.title-item-list{
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #505050;
+}
+
+body.wishlist-index-index div.page-title-wrapper {
+  display: none;
+}
+
+body.wishlist-index-index div.sidebar-additional {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  body.wishlist-index-index div.box-tocart{
+    margin: 0px;
+  }
+
+  body.wishlist-index-index fieldset.fieldset{
+    margin-bottom: 0px !important;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  body.wishlist-index-index div.box-tocart {
+    width: 45% !important;
+  }
+  
+  body.wishlist-index-index button.btn-remove {
+    margin: 0px !important;
+    width: 100%;
+  }
+  
+  body.wishlist-index-index div.product-item-actions {
+    float: right;
+    margin: 0px !important;
+  }
+  
+  body.wishlist-index-index div.product-item-inner div:nth-child(3){
+    width: 48% !important;
+  }
+  
+  body.wishlist-index-index div.box-tocart {
+    width: 50%;
+    float: left;
+    margin-bottom: 0px;
+  }
+
+  .list-border{
+    border: 0.5px solid #979797;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+
 /******************** Style for Address Edit *********************/
 body.customer-address-form div.telephone input.input-text {
   width: 100% !important;
@@ -78,6 +192,7 @@ body.customer-address-form div.field-name-lastname label.label {
 
 .btn-edit-address {
   background: #000000 !important;
+  border-color: #000000 !important;
 }
 
 .width-buttom {
@@ -127,6 +242,7 @@ body.customer-address-form div.sidebar-additional {
     margin-top: 0px;
     border: 1px solid;
     padding: 50px;
+    border-radius: 5px;
   }
 
   .btn-edit-address {
@@ -146,19 +262,26 @@ body.customer-address-form div.sidebar-additional {
 }
 
 /******************** Style for Address Info *********************/
+.btn-add-address{
+  border-color: #000000 !important;
+  float: initial !important;
+  background: #000000 !important;
+}
 
-.changes-defauld-link {
+.changes-defauld-link{
   color: #000000 !important;
   font-weight: 600;
 }
 
 .body-table-border {
   border-bottom: 0.5px solid;
+  border-radius: 5px;
 }
 
 .title-table-border {
   border-bottom: 0.5px solid;
   border-top: 0.5px solid;
+  border-radius: 5px;
 }
 
 .title-adress-margin {
@@ -288,6 +411,7 @@ body.customer-account-index div.sidebar-additional {
     border-right: 1px solid;
     border-bottom: 1px solid;
     padding: 0px 20px 40px 20px;
+    border-radius: 0px 0px 5px 5px;
   }
 
   .div-grid-table {
@@ -303,11 +427,13 @@ body.customer-account-index div.sidebar-additional {
     border-right: 1px solid;
     padding: 20px 20px 40px 20px;
     margin-bottom: unset !important;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .div-info-account {
     border: 1px solid #979797;
     padding: 20px;
+    border-radius: 5px;
   }
 
   .title-account-info {
@@ -375,6 +501,7 @@ body.customer-account-edit div.sidebar-additional {
 
 .btn-edit-account {
   background: #000000 !important;
+  border-color: #000000 !important;
 }
 
 .delete-margin-edit-account {
@@ -415,6 +542,7 @@ body.customer-account-edit div.page-title-wrapper {
   .add-border-full-name-ect-account {
     border: 20px solid #ffffff;
     width: 55% !important;
+    border-radius: 5px;
   }
 
   .chekbox-edit-account {
@@ -427,6 +555,7 @@ body.customer-account-edit div.page-title-wrapper {
     width: 10% !important;
     margin-left: 45% !important;
     margin-right: 45% !important;
+    border-color: #000000 !important;
   }
 
   .margin-changes-pssamdemail {
@@ -441,6 +570,7 @@ body.customer-account-edit div.page-title-wrapper {
     display: block;
     background: #ffffff;
     border: 20px solid #ffffff;
+    border-radius: 5px;
   }
 
   .width-changes-email-and-pass {
@@ -449,6 +579,7 @@ body.customer-account-edit div.page-title-wrapper {
 
   .delete-margin-edit-account {
     border: 1px solid #979797;
+    border-radius: 5px;
   }
 
   .dic-btn-edit-account {
@@ -497,6 +628,7 @@ body.customer-account-createpassword div.page-title-wrapper {
   background: #000000 !important;
   border: 1px solid #000000 !important;
   float: none !important;
+  border-radius: 5px;
 }
 
 body.customer-account-forgotpassword div.page-title-wrapper {
