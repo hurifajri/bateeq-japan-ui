@@ -18,7 +18,21 @@
   font-display: swap;
 }
 
+/******************** Style for Sile Bar *********************/
+
+.disble-display-side-bar{
+  display: none !important;
+}
+
+.div-side-bar{
+  font-size: 15px;
+  color: #505050;
+  background-color: #FFFFFF !important;
+  font-family: "Montserrat";
+}
+
 /******************** Style for Wishlist *********************/
+
 body.wishlist-index-index a.product-item-link{
   color: #505050 !important;
 }
@@ -98,6 +112,16 @@ body.wishlist-index-index div.sidebar-additional {
     margin-bottom: 0px !important;
   }
 
+  .ellipsis-wish-list{
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .title-item-list{
+    height: 17px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -130,9 +154,28 @@ body.wishlist-index-index div.sidebar-additional {
     padding: 20px;
     border-radius: 5px;
   }
+
+  .title-item-list{
+    height: none;
+  }
 }
 
 /******************** Style for Address Edit *********************/
+.title-3-address-edit{
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.legen-title-edit-address{
+  font-family: "Montserrat";
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.div-contact-infomartion{
+  padding: 0px 20px;
+}
+
 body.customer-address-form div.telephone input.input-text {
   width: 100% !important;
   padding: 12px 20px !important;
@@ -140,10 +183,13 @@ body.customer-address-form div.telephone input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.telephone label.label {
-  display: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.company input.input-text {
@@ -153,10 +199,13 @@ body.customer-address-form div.company input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.company label.label {
-  display: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.field-name-firstname input.input-text {
@@ -166,10 +215,13 @@ body.customer-address-form div.field-name-firstname input.input-text {
   box-sizing: border-box !important;
   border: none !important;
   border-bottom: 2px solid #979797 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.field-name-firstname label.label {
-  display: none;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 body.customer-address-form div.field-name-lastname input.input-text {
@@ -182,7 +234,7 @@ body.customer-address-form div.field-name-lastname input.input-text {
 }
 
 body.customer-address-form div.field-name-lastname label.label {
-  display: none;
+
 }
 
 .label-check-box {
@@ -193,6 +245,9 @@ body.customer-address-form div.field-name-lastname label.label {
 .btn-edit-address {
   background: #000000 !important;
   border-color: #000000 !important;
+  height: 35px;
+  font-size: 15px !important;
+  line-height: 0px !important;
 }
 
 .width-buttom {
@@ -257,11 +312,21 @@ body.customer-address-form div.sidebar-additional {
   }
 
   .label-check-box {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 
 /******************** Style for Address Info *********************/
+.title-defauld{
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+.change-defauld{
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+
 .btn-add-address{
   border-color: #000000 !important;
   float: initial !important;
@@ -305,7 +370,7 @@ body.customer-address-form div.sidebar-additional {
 
 .title4-addres-info-table {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -315,7 +380,7 @@ body.customer-address-form div.sidebar-additional {
 
 .title3-addres-info-table {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -325,7 +390,7 @@ body.customer-address-form div.sidebar-additional {
 
 .title2-addres-info-table {
   font-family: "Montserrat";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -337,7 +402,7 @@ body.customer-address-form div.sidebar-additional {
   width: 100%;
   float: left;
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -349,7 +414,7 @@ body.customer-address-form div.sidebar-additional {
   width: 100%;
   float: left;
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -361,7 +426,7 @@ body.customer-address-form div.sidebar-additional {
   width: 100%;
   float: left;
   font-family: "Montserrat";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -444,7 +509,7 @@ body.customer-account-index div.sidebar-additional {
     width: 20%;
     float: left;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -458,7 +523,7 @@ body.customer-account-index div.sidebar-additional {
     width: 80%;
     float: right;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -480,6 +545,7 @@ body.customer-account-edit div.password-info {
 .checkbox-edt-account-label {
   font-weight: bold !important;
   color: #000000;
+  font-size: 12px;
 }
 
 body.customer-account-edit div.sidebar-additional {
@@ -487,8 +553,8 @@ body.customer-account-edit div.sidebar-additional {
 }
 
 .title-edit-account {
-  font-family: Montserrat !important;
-  font-size: 25px;
+  font-family: "Montserrat" !important;
+  font-size: 20px;
   font-weight: bold !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -506,6 +572,8 @@ body.customer-account-edit div.sidebar-additional {
 .btn-edit-account {
   background: #000000 !important;
   border-color: #000000 !important;
+  line-height: 10px;
+  font-size: 15px;
 }
 
 .delete-margin-edit-account {
@@ -521,7 +589,7 @@ body.customer-account-edit div.page-title-wrapper {
   width: 122px !important;
   height: 30px !important;
   font-family: "Montserrat" !important;
-  font-size: 20px !important;
+  font-size: 15px !important;
   font-weight: 600 !important;
   font-stretch: normal !important;
   font-style: normal !important;
@@ -599,7 +667,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .jpn {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -614,7 +682,7 @@ body.customer-account-createpassword div.page-title-wrapper {
 }
 
 .title-change-pass .eng {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -648,7 +716,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .jpn {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -663,7 +731,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-frgt-pass .eng {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -740,6 +808,8 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .field-name-firstname,
 .field-name-lastname {
   position: relative;
+  font-family: "Montserrat";
+  font-size: 14px;
 }
 
 #firstname-error {
@@ -751,7 +821,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .You-can-use-a-phone {
   width: 349px;
   height: 19px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -811,7 +881,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-register .jpn-reg {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px !important;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -826,7 +896,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-register .eng-reg {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -881,7 +951,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 .Forgot-Password {
   width: 143px !important;
   height: 19px !important;
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 15px !important;
   font-weight: 500 !important;
   font-stretch: normal !important;
@@ -893,7 +963,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-login .jpn {
-  font-family: PingFangSC !important;
+  font-family: "PingFangSC" !important;
   font-size: 30px !important;
   font-weight: 600 !important;
   font-stretch: normal !important;
@@ -908,7 +978,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 }
 
 .title-login .eng {
-  font-family: Montserrat !important;
+  font-family: "Montserrat" !important;
   font-size: 25px !important;
   font-weight: normal !important;
   font-stretch: normal !important;
@@ -991,7 +1061,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   .form.form-orders-search,
   .login-container,
   #form-validate {
-    margin-top: 50px !important;
+    margin-top: 50px;
   }
 }
 
