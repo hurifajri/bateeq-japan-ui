@@ -1059,7 +1059,9 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 /* Global style */
 
 .top-container {
-  position: relative;
+  position: sticky;
+  top: 83px;
+  z-index: 51;
 }
 
 .text-container {
@@ -1068,6 +1070,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   right: 0;
   top: -2px;
   height: 47px;
+  width: 60%
 }
 
 .running-text {
@@ -1415,9 +1418,14 @@ button.en {
 
 /* Global style */
 // Ranking Style 
+body.cms-home div.column.main div:nth-child(8) li.product-item:hover,
+body.cms-home div.column.main div:nth-child(8) li.product-item.active {
+  box-shadow: none !important;
+  border: solid 5px #2362d8 !important;
+}
 body.cms-home div.column.main div:nth-child(8) li{
   padding-left: 5px;
-  height: 390px;
+  min-height: 450px;
   border-radius: 5px;
 }
 body.cms-home div.column.main div:nth-child(8) li:nth-child(1){
@@ -1435,13 +1443,12 @@ body.cms-home div.column.main div:nth-child(8) li:nth-child(4){
 // Ranking Style End
 
 // Recomended Style
-/*body.cms-home div.column.main div:nth-child(10) div.product-item-details{
-  margin-top: -200px;
-  z-index: 1;
-  position: sticky;
-  text-align: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
-}*/
+body.cms-home div.column.main div:nth-child(10) li{
+  padding-left: 5px;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-bottom: 1px;
+}
 
 body.cms-home div.column.main div:nth-child(10) div.product-item-info {
   position: relative;
@@ -1534,6 +1541,9 @@ body.cms-home div.column.main div:nth-child(10) div.product-item-details strong.
 
 .page-header {
   margin-bottom: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
 .page-header .panel.wrapper {
@@ -1931,8 +1941,12 @@ body.cms-home div.column.main div:nth-child(10) div.product-item-details strong.
   }
 
   .nav-sections {
-    margin-bottom: 0;
-    z-index: 2 !important;
+    // margin-bottom: 0;
+    // z-index: 2 !important;
+
+    position: sticky;
+    top: 83px;
+    z-index: 50;
   }
 
   .customer-welcome .action.switch {
