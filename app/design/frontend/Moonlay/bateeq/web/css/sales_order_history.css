@@ -62,9 +62,9 @@ table>tbody>tr>td.col.id {
     }
 
     .product-item {
-        display: initial;
-        margin: 1%;
-        line-height: 82px;
+        display: inline-flex;
+        margin-right: 1%;
+        line-height: 75px;
     }
     
     .left-side {
@@ -73,6 +73,7 @@ table>tbody>tr>td.col.id {
     }
     
     .right-side {
+        display: initial;
         float: right;
         width: 45%;
     }
