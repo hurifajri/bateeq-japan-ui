@@ -1,9 +1,3 @@
-table>thead>tr>th:not(:last-child), table>tbody>tr>th:not(:last-child), 
-table>tfoot>tr>th:not(:last-child), table>thead>tr>td:not(:last-child),
-table>tbody>tr>td:not(:last-child), table>tfoot>tr>td:not(:last-child) {
-    border-right: 1px solid #ccc;
-}
-
 table>thead>tr>th.col {
     color: #979797;
 }
@@ -16,8 +10,17 @@ table>tbody>tr>td.col.id {
     font-weight: 600;
 }
 
-.detail-order {
+.info-order {
+    border-top: solid 0.5px white;
+}
+
+/* .detail-order {
     border-bottom: solid 0.5px #979797;
+} */
+
+.detail-order {
+    border-bottom: 0.5px solid #ccc;
+    border-top: 0.5px solid #ccc;
 }
 
 .product-item.name {
@@ -37,7 +40,6 @@ table>tbody>tr>td.col.id {
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-    text-align: right;
     color: #505050;
 }
 
@@ -48,15 +50,16 @@ table>tbody>tr>td.col.id {
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-    text-align: right;
     color: #505050;
 }
 
-.detail-order {
-    border-bottom: 1px solid #ccc;
-}
-
 @media (min-width: 640px) {
+    table>thead>tr>th:not(:last-child), table>tbody>tr>th:not(:last-child), 
+    table>tfoot>tr>th:not(:last-child), table>thead>tr>td:not(:last-child),
+    table>tbody>tr>td:not(:last-child), table>tfoot>tr>td:not(:last-child) {
+        border-right: 1px solid #ccc;
+    }
+
     .table>tbody>tr>th, .table>tbody>tr>td {
         border-top: none;
     }
@@ -81,5 +84,13 @@ table>tbody>tr>td.col.id {
     .right {
         float: right;
         margin-right: 5%;
+    }
+
+    .right.info {
+        text-align: right;
+    }
+    
+    .right.price {
+        text-align: right;
     }
 }

@@ -65,7 +65,7 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
                     foreach ($orders as $_order) : 
                         $datetime = new DateTime($_order->getCreatedAt());
                 ?>
-                    <tr>
+                    <tr class="info-order">
                         <td data-th="<?= $block->escapeHtml(__('Order #')) ?>" class="col id"><?= $block->escapeHtml($_order->getRealOrderId()) ?></td>
                         <td data-th="<?= $block->escapeHtml(__('Date')) ?>" class="col date"><?= /* @noEscape */ $fullFormatter->format($datetime); ?></td>
                         <?php $extra = $block->getChildBlock('extra.container'); ?>
@@ -107,8 +107,8 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
                                     $attributesInfo = $productOptions['attributes_info'];
                                 endif;
                     ?>
-                    <tr>
-                        <td colspan=5 class="detail-order">
+                    <tr class="detail-order">
+                        <td colspan=5>
                             <div class="product-item left-side">
                                 <div class="product-item thumbnail">
                                     <img src="<?= $imageUrl ?>">
