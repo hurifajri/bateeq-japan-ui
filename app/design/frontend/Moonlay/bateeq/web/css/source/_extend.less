@@ -1123,8 +1123,17 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 /******************** Style for Moonlay/CustomHome Module *********************/
 
 /* Global style */
+.rating-summary .rating-result > span:before {
+  z-index: 0;
+}
+
 .top-container {
-  position: relative;
+  position: fixed;
+  top: 124px;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  max-width: 1980px;
   padding: 0;
 }
 
@@ -1460,45 +1469,45 @@ button.en {
 
 /* Global style */
 // Ranking Style
-body.cms-home div.column.main div:nth-child(8) li.product-item:hover,
-body.cms-home div.column.main div:nth-child(8) li.product-item.active {
+body.cms-home div.column.main div:nth-child(9) li.product-item:hover,
+body.cms-home div.column.main div:nth-child(9) li.product-item.active {
   box-shadow: none !important;
   border: solid 5px #2362d8 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li {
+body.cms-home div.column.main div:nth-child(9) li {
   padding-left: 5px;
   min-height: 450px;
   border-radius: 5px;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(1) {
+body.cms-home div.column.main div:nth-child(9) li:nth-child(1) {
   border: 5px solid #c1a358 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(2) {
+body.cms-home div.column.main div:nth-child(9) li:nth-child(2) {
   border: 5px solid #b8b8b8 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(3) {
+body.cms-home div.column.main div:nth-child(9) li:nth-child(3) {
   border: 5px solid #d47557 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(4) {
+body.cms-home div.column.main div:nth-child(9) li:nth-child(4) {
   border: 5px solid #505050 !important;
 }
 // Ranking Style End
 
 // Recomended Style
-body.cms-home div.column.main div:nth-child(10) li {
+body.cms-home div.column.main div:nth-child(11) li {
   padding-left: 5px;
   min-height: 450px;
   border-radius: 5px;
   margin-bottom: 1px;
 }
 
-body.cms-home div.column.main div:nth-child(10) div.product-item-info {
+body.cms-home div.column.main div:nth-child(11) div.product-item-info {
   position: relative;
 }
 
 body.cms-home
   div.column.main
-  div:nth-child(10)
+  div:nth-child(11)
   div.product-item-info
   div.product-item-details {
   bottom: 0;
@@ -1516,34 +1525,34 @@ body.cms-home
   );
 }
 
-body.cms-home div.column.main div:nth-child(10) div.product-item-info {
+body.cms-home div.column.main div:nth-child(11) div.product-item-info {
   height: 320px;
 }
 
 body.cms-home
   div.column.main
-  div:nth-child(10)
+  div:nth-child(11)
   div.product-item-details
   div.product-reviews-summary {
   display: none;
 }
 body.cms-home
   div.column.main
-  div:nth-child(10)
+  div:nth-child(11)
   div.product-item-details
   div.price-box {
   display: none;
 }
 body.cms-home
   div.column.main
-  div:nth-child(10)
+  div:nth-child(11)
   div.product-item-details
   div[class*="swatch-opt"] {
   display: none;
 }
 body.cms-home
   div.column.main
-  div:nth-child(10)
+  div:nth-child(11)
   div.product-item-details
   div.product-item-inner {
   display: none;
@@ -1551,7 +1560,7 @@ body.cms-home
 
 body.cms-home
   div.column.main
-  div:nth-child(10)
+  div:nth-child(11)
   div.product-item-details
   strong.product-item-name
   a {
@@ -2282,6 +2291,7 @@ h2.shopping-cart {
   .products-grid .product-item-info.active {
     box-shadow: 0 2px 7px 0 rgba(193, 193, 193, 0.5);
     border-radius: 5px 5px 0 0;
+    z-index: 0;
   }
 
   .block.widget .products-grid .product-item .product-item-inner,
@@ -2370,12 +2380,10 @@ h2.shopping-cart {
   }*/
 
   .nav-sections {
-    // margin-bottom: 0;
-    // z-index: 2 !important;
-
     position: sticky;
-    top: 83px;
-    z-index: 50;
+    top: 77px;
+    z-index: 2;
+    margin-bottom: 0;
   }
 
   .customer-welcome .action.switch {
