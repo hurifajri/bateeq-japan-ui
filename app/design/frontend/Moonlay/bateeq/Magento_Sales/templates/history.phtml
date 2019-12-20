@@ -28,7 +28,6 @@ $imageManager = $objectManager->get('\Magento\Catalog\Helper\Image');
             $status = $block->escapeHtml($_order->getStatusLabel());
             if (array_key_exists($status, $groupedItemByStatus)) :
                 array_push($groupedItemByStatus[$status], $_order);
-                array_push($groupedItemByStatus[$status], $_order);
             else :
                 $groupedItemByStatus[$status] = array( $_order );
             endif;
