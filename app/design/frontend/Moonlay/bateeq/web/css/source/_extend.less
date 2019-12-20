@@ -1124,18 +1124,6 @@ body.customer-account-forgotpassword div.page-title-wrapper {
 
 /* Global style */
 .top-container {
-  position: sticky;
-  top: 83px;
-  z-index: 51;
-}
-
-.text-container {
-  position: absolute;
-  z-index: 3 !important;
-  right: 0;
-  top: -2px;
-  height: 47px;
-  width: 60%
   position: relative;
   padding: 0;
 }
@@ -1471,33 +1459,33 @@ button.en {
 /******************** Style for Moonlay/bateeq Theme *********************/
 
 /* Global style */
-// Ranking Style 
+// Ranking Style
 body.cms-home div.column.main div:nth-child(8) li.product-item:hover,
 body.cms-home div.column.main div:nth-child(8) li.product-item.active {
   box-shadow: none !important;
   border: solid 5px #2362d8 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li{
+body.cms-home div.column.main div:nth-child(8) li {
   padding-left: 5px;
   min-height: 450px;
   border-radius: 5px;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(1){
+body.cms-home div.column.main div:nth-child(8) li:nth-child(1) {
   border: 5px solid #c1a358 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(2){
+body.cms-home div.column.main div:nth-child(8) li:nth-child(2) {
   border: 5px solid #b8b8b8 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(3){
+body.cms-home div.column.main div:nth-child(8) li:nth-child(3) {
   border: 5px solid #d47557 !important;
 }
-body.cms-home div.column.main div:nth-child(8) li:nth-child(4){
+body.cms-home div.column.main div:nth-child(8) li:nth-child(4) {
   border: 5px solid #505050 !important;
 }
 // Ranking Style End
 
 // Recomended Style
-body.cms-home div.column.main div:nth-child(10) li{
+body.cms-home div.column.main div:nth-child(10) li {
   padding-left: 5px;
   min-height: 450px;
   border-radius: 5px;
@@ -1508,7 +1496,11 @@ body.cms-home div.column.main div:nth-child(10) div.product-item-info {
   position: relative;
 }
 
-body.cms-home div.column.main div:nth-child(10) div.product-item-info div.product-item-details {
+body.cms-home
+  div.column.main
+  div:nth-child(10)
+  div.product-item-info
+  div.product-item-details {
   bottom: 0;
   position: absolute;
   top: 0;
@@ -1517,27 +1509,52 @@ body.cms-home div.column.main div:nth-child(10) div.product-item-info div.produc
   padding: 65% 0px;
   text-align: center;
   z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
+  );
 }
 
 body.cms-home div.column.main div:nth-child(10) div.product-item-info {
   height: 320px;
 }
 
-body.cms-home div.column.main div:nth-child(10) div.product-item-details div.product-reviews-summary{
+body.cms-home
+  div.column.main
+  div:nth-child(10)
+  div.product-item-details
+  div.product-reviews-summary {
   display: none;
 }
-body.cms-home div.column.main div:nth-child(10) div.product-item-details div.price-box{
+body.cms-home
+  div.column.main
+  div:nth-child(10)
+  div.product-item-details
+  div.price-box {
   display: none;
 }
-body.cms-home div.column.main div:nth-child(10) div.product-item-details div[class*="swatch-opt"]{
+body.cms-home
+  div.column.main
+  div:nth-child(10)
+  div.product-item-details
+  div[class*="swatch-opt"] {
   display: none;
 }
-body.cms-home div.column.main div:nth-child(10) div.product-item-details div.product-item-inner{
+body.cms-home
+  div.column.main
+  div:nth-child(10)
+  div.product-item-details
+  div.product-item-inner {
   display: none;
 }
 
-body.cms-home div.column.main div:nth-child(10) div.product-item-details strong.product-item-name a{
+body.cms-home
+  div.column.main
+  div:nth-child(10)
+  div.product-item-details
+  strong.product-item-name
+  a {
   color: white;
 }
 
