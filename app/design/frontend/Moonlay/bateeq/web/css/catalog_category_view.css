@@ -113,6 +113,10 @@ h1.page-title {
     padding: 3%;
 }
 
+.product-image-container {
+    width: 100% !important;
+}
+
 @media (min-width: 768px) {
     .products-grid .product-item-inner {
         margin: 0px -4px 0px -5px;
