@@ -1123,7 +1123,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   z-index: 0;
 }
 
-.top-container {
+/*.top-container {
   position: fixed;
   top: 124px;
   z-index: 2;
@@ -1131,7 +1131,7 @@ body.customer-account-forgotpassword div.page-title-wrapper {
   right: 0;
   max-width: 1980px;
   padding: 0;
-}
+}*/
 
 .text-container {
   width: 100% !important;
@@ -1461,33 +1461,8 @@ button.en {
 }
 
 /******************** Style for Moonlay/bateeq Theme *********************/
-// Sticky Navbar
-.page-header,
-.nav-sections,
-.top-container {
-  position: sticky;
-  left: 0;
-  right: 0;
-}
-
-.page-header {
-  top: 0;
-  z-index: 4;
-}
-
-.nav-sections {
-  top: 73px;
-  margin-bottom: 0;
-  z-index: 3;
-}
-
-.top-container {
-  top: 120px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
-  z-index: 2;
-}
-
-.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+.products-grid .product-item-info:hover,
+.products-grid .product-item-info.active {
   padding: 0 9px 9px !important;
 }
 
@@ -1498,7 +1473,12 @@ body.cms-home div.column.main div:nth-child(9) li.product-item:focus {
   outline: none !important;
 }
 
-body.cms-home div.column.main div:nth-child(9) li.product-item:hover .product-item-inner .product-item-actions {
+body.cms-home
+  div.column.main
+  div:nth-child(9)
+  li.product-item:hover
+  .product-item-inner
+  .product-item-actions {
   border-top: 2px solid #eaeaea;
   padding-top: 20px;
   margin-top: 0;
@@ -1985,10 +1965,55 @@ h2.shopping-cart {
     background-color: #ffffff !important;
     color: #000000 !important;
   }
+
+  //Sticky Navbar
+  .page-header {
+    margin-bottom: 0;
+  }
+
+  .top-container {
+    top: 66px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .minicart-wrapper .action.showcart .counter.qty {
+    height: 18px;
+    line-height: 18px;
+    border-radius: 5px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  // Sticky Navbar
+  .page-header,
+  .nav-sections,
+  .top-container {
+    position: sticky;
+    left: 0;
+    right: 0;
+  }
+
+  .page-header {
+    top: 0;
+    z-index: 4;
+  }
+
+  .nav-sections {
+    top: 73px;
+    margin-bottom: 0;
+    z-index: 3;
+  }
+
+  .top-container {
+    top: 120px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+    z-index: 2;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   div.subtotal {
     margin: 20px 0 10px !important;
   }
