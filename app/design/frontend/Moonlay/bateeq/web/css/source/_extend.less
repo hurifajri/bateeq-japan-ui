@@ -1669,22 +1669,26 @@ button.en {
 }
 
 /******************** Style for Moonlay/bateeq Theme *********************/
+body.cms-home .products-grid .product-item-info:hover,
+body.cms-home .products-grid .product-item-info.active {
+  padding: 0;
+  margin: 0;
+}
+
 .product-image-wrapper {
   z-index: -1;
 }
 
-.products-grid .product-item-info,
-.products-grid .product-item-info:hover,
-.products-grid .product-item-info.active {
-  padding: 0 9px 9px !important;
-}
-
-.products-grid .product-item-info:hover,
-.products-grid .product-item-info.active {
-  margin: 0;
+body.cms-home .product-image-container,
+body.cms-home .product-image-photo {
+  width: 100% !important;
 }
 
 // Ranking Style
+body.cms-home div.column.main div:nth-child(10) .product-item-details {
+  padding: 0 9px 9px;
+}
+
 body.cms-home div.column.main div:nth-child(10) li.product-item:hover,
 body.cms-home div.column.main div:nth-child(10) li.product-item:focus {
   box-shadow: none !important;
@@ -1805,12 +1809,6 @@ body.cms-home
 }
 
 // Recomended Style
-body.cms-home div.column.main div:nth-child(12) li {
-  //padding-left: 5px;
-  border-radius: 5px;
-  margin-bottom: 95px;
-}
-
 body.cms-home div.column.main div:nth-child(12) div.product-item-info {
   position: relative;
 }
@@ -1833,11 +1831,22 @@ body.cms-home
   padding: 65% 0px;
   text-align: center;
   z-index: 1;
+}
+
+body.cms-home div.column.main div:nth-child(12) div.product-item-info div.product-item-details:hover {
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.55),
     rgba(0, 0, 0, 0.55)
   );
+}
+
+body.cms-home div.column.main div:nth-child(12) .product-item-name {
+  display: none;
+}
+
+body.cms-home div.column.main div:nth-child(12) div.product-item-info div.product-item-details:hover .product-item-name {
+  display: block;
 }
 
 body.cms-home
@@ -2298,6 +2307,11 @@ body.cms-home .price-label {
     margin-bottom: 50px;
   }
 
+  // Recommended Products
+  body.cms-home div.column.main div:nth-child(12) li {
+    margin-bottom: 10px;
+  }
+
   button.action.tocart.primary {
     width: 90px;
     height: 25px;
@@ -2416,6 +2430,11 @@ body.cms-home .price-label {
     .product-item-info
     .product-item-inner {
     border: 5px solid #505050;
+  }
+
+  // Recommended Products
+  body.cms-home div.column.main div:nth-child(12) li {
+    margin-bottom: 35px;
   }
 
   // Sticky Navbar
