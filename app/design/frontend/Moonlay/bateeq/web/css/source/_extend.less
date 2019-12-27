@@ -1456,6 +1456,9 @@ button.en {
 }
 
 /******************** Style for Moonlay/bateeq Theme *********************/
+.product-image-wrapper {
+  z-index: -1;
+}
 
 .products-grid .product-item-info,
 .products-grid .product-item-info:hover,
@@ -1520,13 +1523,7 @@ body.cms-home
   div.column.main
   div:nth-child(10)
   li:nth-child(1)
-  .product-item-info,
-body.cms-home
-  div.column.main
-  div:nth-child(10)
-  li:nth-child(1):hover
-  .product-item-info
-  .product-item-inner {
+  .product-item-info {
   border: 5px solid #c1a358;
 }
 
@@ -1534,13 +1531,7 @@ body.cms-home
   div.column.main
   div:nth-child(10)
   li:nth-child(2)
-  .product-item-info,
-body.cms-home
-  div.column.main
-  div:nth-child(10)
-  li:nth-child(2):hover
-  .product-item-info
-  .product-item-inner {
+  .product-item-info {
   border: 5px solid #b8b8b8;
 }
 
@@ -1548,13 +1539,7 @@ body.cms-home
   div.column.main
   div:nth-child(10)
   li:nth-child(3)
-  .product-item-info,
-body.cms-home
-  div.column.main
-  div:nth-child(10)
-  li:nth-child(3):hover
-  .product-item-info
-  .product-item-inner {
+  .product-item-info {
   border: 5px solid #d47557;
 }
 
@@ -1562,13 +1547,7 @@ body.cms-home
   div.column.main
   div:nth-child(10)
   li:nth-child(4)
-  .product-item-info,
-body.cms-home
-  div.column.main
-  div:nth-child(10)
-  li:nth-child(4):hover
-  .product-item-info
-  .product-item-inner {
+  .product-item-info {
   border: 5px solid #505050;
 }
 
@@ -1612,17 +1591,6 @@ body.cms-home
   margin: 9px -4px 0 -5px !important;
 }
 
-body.cms-home
-  div.column.main
-  div:nth-child(10)
-  li.product-item:hover
-  .product-item-inner
-  .product-item-actions {
-  border-top: 2px solid #eaeaea;
-  padding-top: 20px;
-  margin-top: 0;
-}
-
 // Recomended Style
 body.cms-home div.column.main div:nth-child(12) li {
   //padding-left: 5px;
@@ -1657,10 +1625,6 @@ body.cms-home
     rgba(0, 0, 0, 0.55),
     rgba(0, 0, 0, 0.55)
   );
-}
-
-body.cms-home div.column.main div:nth-child(12) div.product-item-info {
-  /*height: 320px;*/
 }
 
 body.cms-home
@@ -1881,13 +1845,6 @@ body.checkout-index-index select {
   color: #ff0000 !important;
 }
 
-/*.page-header {
-  margin-bottom: 0;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}*/
-
 .page-header .panel.wrapper {
   background-color: transparent;
 }
@@ -2087,8 +2044,47 @@ h2.shopping-cart {
   color: #fff;
 }
 
+body.cms-home .rating-summary .rating-result:before {
+  z-index: 0;
+}
+
+body.cms-home .price-label {
+  display: none;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  // Rank Products
+  body.cms-home .rating-summary .rating-result:before,
+  body.cms-home .rating-summary .rating-result > span:before {
+    font-size: 10px;
+    height: 13px;
+  }
+
+  body.cms-home .product-item .product-reviews-summary .reviews-actions {
+    font-size: 10px;
+    margin-top: 0px;
+  }
+  
+  body.cms-home .swatch-option.text {
+    font-size: 9px;
+    margin-right: 3px;
+    min-width: 11px;
+    padding: 0 5px;
+  }
+
+  body.cms-home .swatch-attribute-options {
+    margin: 0;
+  }
+
+  body.cms-home .product-item .price-box {
+    margin: 0 0 5px;
+  }
+
+  body.cms-home div.column.main div:nth-child(10) li.product-item {
+    margin-bottom: 50px;
+  }
+
   button.action.tocart.primary {
     width: 90px;
     height: 25px;
@@ -2161,6 +2157,54 @@ h2.shopping-cart {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  // Rank Products
+  body.cms-home
+    div.column.main
+    div:nth-child(10)
+    li.product-item:hover
+    .product-item-inner
+    .product-item-actions {
+    border-top: 2px solid #eaeaea;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+
+  body.cms-home
+    div.column.main
+    div:nth-child(10)
+    li:nth-child(1):hover
+    .product-item-info
+    .product-item-inner {
+    border: 5px solid #c1a358;
+  }
+
+  body.cms-home
+    div.column.main
+    div:nth-child(10)
+    li:nth-child(2):hover
+    .product-item-info
+    .product-item-inner {
+    border: 5px solid #b8b8b8;
+  }
+
+  body.cms-home
+    div.column.main
+    div:nth-child(10)
+    li:nth-child(3):hover
+    .product-item-info
+    .product-item-inner {
+    border: 5px solid #d47557;
+  }
+
+  body.cms-home
+    div.column.main
+    div:nth-child(10)
+    li:nth-child(4):hover
+    .product-item-info
+    .product-item-inner {
+    border: 5px solid #505050;
+  }
+
   // Sticky Navbar
   .page-header,
   .nav-sections,
