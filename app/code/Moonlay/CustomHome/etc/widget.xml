@@ -76,4 +76,16 @@
             </parameter>
 		</parameters>
 	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\Subtitle" id="moonlay_customhome_subtitle">
+		<label>Moonlay - Subtitle</label>
+		<description>
+            A widget to show a subtitle
+        </description>
+		<parameters>
+			<parameter name="subtitle" xsi:type="text" visible="true" sort_order="10">
+                <label>Subtitle</label>
+            </parameter>
+		</parameters>
+	</widget>
 </widgets>
