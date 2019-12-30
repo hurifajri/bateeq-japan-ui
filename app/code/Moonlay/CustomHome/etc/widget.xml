@@ -2,20 +2,12 @@
          xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
 
     <widget class="Moonlay\CustomHome\Block\Widget\Collections" id="moonlay_customhome_collections">
-		<label>Custom: Collections</label>
+		<label>Moonlay - Collections</label>
 		<description>
-            Men and Women's Collection || Banner
+            A widget to show product collections
         </description>
 		<parameters>
-			<parameter name="title_jp" xsi:type="text" required="true" visible="true" sort_order="10">
-                <label>Japanese Title</label>
-            </parameter>
-
-            <parameter name="title_en" xsi:type="text" required="true" visible="true" sort_order="20">
-                <label>English Title</label>
-            </parameter>
-
-            <parameter name="men_jp" xsi:type="text" required="true" visible="true" sort_order="30">
+            <parameter name="men_jp" xsi:type="text" visible="true" sort_order="30">
                 <label>Japanese Title for Men</label>
             </parameter>
 
@@ -27,7 +19,7 @@
                 <label>URL for Men's Collection</label>
             </parameter>
 
-            <parameter name="women_jp" xsi:type="text" required="true" visible="true" sort_order="60">
+            <parameter name="women_jp" xsi:type="text" visible="true" sort_order="60">
                 <label>Japanese Title for Women</label>
             </parameter>
 
@@ -42,9 +34,9 @@
 	</widget>
 
     <widget class="Moonlay\CustomHome\Block\Widget\About" id="moonlay_customhome_about">
-		<label>Custom: About</label>
+		<label>Moonlay - About</label>
 		<description>
-            About Bateeq || Banner and Video
+            A widget to describe about company
         </description>
 		<parameters>
 			<parameter name="about" xsi:type="text" required="true" visible="true" sort_order="10">
@@ -58,9 +50,9 @@
 	</widget>
 
     <widget class="Moonlay\CustomHome\Block\Widget\RunningText" id="moonlay_customhome_runningtext">
-		<label>Custom: Running Text</label>
+		<label>Moonlay - Headline</label>
 		<description>
-            Homepage headline || Running Text
+            A widget to show running text
         </description>
 		<parameters>
 			<parameter name="running_text" xsi:type="text" required="true" visible="true" sort_order="10">
@@ -70,17 +62,29 @@
 	</widget>
 
     <widget class="Moonlay\CustomHome\Block\Widget\Title" id="moonlay_customhome_title">
-		<label>Custom: Title H2</label>
+		<label>Moonlay - Title</label>
 		<description>
-            Homepage Title H2 || Text H2
+            A widget to show a title
         </description>
 		<parameters>
-			<parameter name="title_jp" xsi:type="text" required="true" visible="true" sort_order="10">
+			<parameter name="title_jp" xsi:type="text" visible="true" sort_order="10">
                 <label>Japanese Title</label>
             </parameter>
 
             <parameter name="title_en" xsi:type="text" required="true" visible="true" sort_order="20">
                 <label>English Title</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\Subtitle" id="moonlay_customhome_subtitle">
+		<label>Moonlay - Subtitle</label>
+		<description>
+            A widget to show a subtitle
+        </description>
+		<parameters>
+			<parameter name="subtitle" xsi:type="text" visible="true" sort_order="10">
+                <label>Subtitle</label>
             </parameter>
 		</parameters>
 	</widget>
