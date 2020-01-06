@@ -88,4 +88,44 @@
             </parameter>
 		</parameters>
 	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\SocMed" id="moonlay_customhome_socmed">
+		<label>Moonlay - Social Media</label>
+		<description>
+            A widget to show a social media
+        </description>
+		<parameters>
+			<parameter name="ig_url" xsi:type="text" visible="true" sort_order="10">
+                <label>Instagram URL</label>
+            </parameter>
+
+            <parameter name="fb_url" xsi:type="text" visible="true" sort_order="20">
+                <label>Facebook URL</label>
+            </parameter>
+
+            <parameter name="tw_url" xsi:type="text" visible="true" sort_order="30">
+                <label>Twitter URL</label>
+            </parameter>
+
+            <parameter name="socmed_username" xsi:type="text" visible="true" sort_order="40">
+                <label>Username</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\LangButton" id="moonlay_customhome_langbutton">
+		<label>Moonlay - Language Switcher</label>
+		<description>
+            A widget to show a language switcher
+        </description>
+		<parameters>
+			<parameter name="jp" xsi:type="text" visible="true" sort_order="10">
+                <label>Japanese</label>
+            </parameter>
+
+            <parameter name="en" xsi:type="text" visible="true" sort_order="20">
+                <label>English</label>
+            </parameter>
+		</parameters>
+	</widget>
 </widgets>
