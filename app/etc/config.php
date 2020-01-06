@@ -239,7 +239,6 @@ return [
         'Amazon_Payment' => 1,
         'Dotdigitalgroup_Email' => 1,
         'Fooman_GoogleAnalyticsPlus' => 1,
-        'JustBetter_Sentry' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
         'Klarna_Kp' => 1,
