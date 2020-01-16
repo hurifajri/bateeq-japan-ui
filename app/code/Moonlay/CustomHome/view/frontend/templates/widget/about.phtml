@@ -6,13 +6,12 @@
     </div>
     <div class="item-about">
         <div class="about">
-            <img class="about-logo" src='<?php echo $this->getViewFileUrl(
-              'Moonlay_CustomHome::images/logo-white.png'
-            ); ?>' />
             <p class="about-text"><?= $block->escapeHtml(
               $block->getData('about')
             ) ?></p>
-            <button class="more">続きを読む</button>
+            <a href="/about-bateeq">
+              <button class="more">ブランド「bateeq」について</button>
+            </a>
         </div>
     </div>
 </div>

@@ -39,7 +39,7 @@
             A widget to describe about company
         </description>
 		<parameters>
-			<parameter name="about" xsi:type="text" required="true" visible="true" sort_order="10">
+			<parameter name="about" xsi:type="textarea" required="true" visible="true" sort_order="10">
                 <label>About Description</label>
             </parameter>
 
