@@ -2,7 +2,7 @@
 $categories = $this->getStoreCategories(true, false, true);
 $categoryHelper = $this->getCategoryHelper();
 ?>
-<ul>
+<ul class="category-tree">
     <?php foreach ($categories as $category):
       if (!$category->getIsActive()) {
         continue;
