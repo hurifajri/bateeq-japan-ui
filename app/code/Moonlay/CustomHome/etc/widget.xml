@@ -39,8 +39,13 @@
             A widget to describe about company
         </description>
 		<parameters>
-			<parameter name="about" xsi:type="textarea" required="true" visible="true" sort_order="10">
+			<!-- <parameter name="about" xsi:type="textarea" required="true" visible="true" sort_order="10">
                 <label>About Description</label>
+            </parameter> -->
+
+            <parameter name="about" xsi:type="block" required="true" visible="true" sort_order="10">
+                <label translate="true">About Description</label>
+                <block class="Moonlay\CustomHome\Block\Widget\TextArea"/>
             </parameter>
 
             <parameter name="video_id" xsi:type="text" required="true" visible="true" sort_order="20">
