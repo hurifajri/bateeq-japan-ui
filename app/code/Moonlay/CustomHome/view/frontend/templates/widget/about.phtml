@@ -1,18 +1,17 @@
 <div class="container-about m-5">
-    <div class="item-about">
-        <div class="about">
-            <img class="about-logo" src='<?php echo $this->getViewFileUrl(
-              'Moonlay_CustomHome::images/logo-white.png'
-            ); ?>' />
-            <p class="about-text"><?= $block->escapeHtml(
-              $block->getData('about')
-            ) ?></p>
-            <button class="more">続きを読む</button>
-        </div>
-    </div>
     <div class="item-about video">
         <iframe src="https://www.youtube.com/embed/<?= $block->escapeHtml(
           $block->getData('video_id')
         ) ?>"></iframe>
+    </div>
+    <div class="item-about">
+        <div class="about">
+            <p class="about-text"><?= $block->escapeHtml(
+              $block->getData('about')
+            ) ?></p>
+            <a href="/about-bateeq">
+              <button class="more">ブランド「bateeq」について</button>
+            </a>
+        </div>
     </div>
 </div>
