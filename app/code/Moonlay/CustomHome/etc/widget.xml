@@ -1,0 +1,131 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+    <widget class="Moonlay\CustomHome\Block\Widget\Collections" id="moonlay_customhome_collections">
+		<label>Moonlay - Collections</label>
+		<description>
+            A widget to show product collections
+        </description>
+		<parameters>
+            <parameter name="men_jp" xsi:type="text" visible="true" sort_order="30">
+                <label>Japanese Title for Men</label>
+            </parameter>
+
+            <parameter name="men_en" xsi:type="text" required="true" visible="true" sort_order="40">
+                <label>English Title for Men</label>
+            </parameter>
+
+            <parameter name="men_url" xsi:type="text" required="true" visible="true" sort_order="50">
+                <label>URL for Men's Collection</label>
+            </parameter>
+
+            <parameter name="women_jp" xsi:type="text" visible="true" sort_order="60">
+                <label>Japanese Title for Women</label>
+            </parameter>
+
+            <parameter name="women_en" xsi:type="text" required="true" visible="true" sort_order="70">
+                <label>English Title for Women</label>
+            </parameter>
+
+            <parameter name="women_url" xsi:type="text" required="true" visible="true" sort_order="80">
+                <label>URL for Women's Collection</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\About" id="moonlay_customhome_about">
+		<label>Moonlay - About</label>
+		<description>
+            A widget to describe about company
+        </description>
+		<parameters>
+			<parameter name="about" xsi:type="textarea" required="true" visible="true" sort_order="10">
+                <label>About Description</label>
+            </parameter>
+
+            <parameter name="video_id" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Youtube video id</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\RunningText" id="moonlay_customhome_runningtext">
+		<label>Moonlay - Headline</label>
+		<description>
+            A widget to show running text
+        </description>
+		<parameters>
+			<parameter name="running_text" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Your text</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\Title" id="moonlay_customhome_title">
+		<label>Moonlay - Title</label>
+		<description>
+            A widget to show a title
+        </description>
+		<parameters>
+			<parameter name="title_jp" xsi:type="text" visible="true" sort_order="10">
+                <label>Japanese Title</label>
+            </parameter>
+
+            <parameter name="title_en" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>English Title</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\Subtitle" id="moonlay_customhome_subtitle">
+		<label>Moonlay - Subtitle</label>
+		<description>
+            A widget to show a subtitle
+        </description>
+		<parameters>
+			<parameter name="subtitle" xsi:type="text" visible="true" sort_order="10">
+                <label>Subtitle</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\SocMed" id="moonlay_customhome_socmed">
+		<label>Moonlay - Social Media</label>
+		<description>
+            A widget to show a social media
+        </description>
+		<parameters>
+			<parameter name="ig_url" xsi:type="text" visible="true" sort_order="10">
+                <label>Instagram URL</label>
+            </parameter>
+
+            <parameter name="fb_url" xsi:type="text" visible="true" sort_order="20">
+                <label>Facebook URL</label>
+            </parameter>
+
+            <parameter name="tw_url" xsi:type="text" visible="true" sort_order="30">
+                <label>Twitter URL</label>
+            </parameter>
+
+            <parameter name="socmed_username" xsi:type="text" visible="true" sort_order="40">
+                <label>Username</label>
+            </parameter>
+		</parameters>
+	</widget>
+
+    <widget class="Moonlay\CustomHome\Block\Widget\LangButton" id="moonlay_customhome_langbutton">
+		<label>Moonlay - Language Switcher</label>
+		<description>
+            A widget to show a language switcher
+        </description>
+		<parameters>
+			<parameter name="jp" xsi:type="text" visible="true" sort_order="10">
+                <label>Japanese</label>
+            </parameter>
+
+            <parameter name="en" xsi:type="text" visible="true" sort_order="20">
+                <label>English</label>
+            </parameter>
+		</parameters>
+	</widget>
+</widgets>

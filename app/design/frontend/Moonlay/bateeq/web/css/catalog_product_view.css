@@ -1,0 +1,207 @@
+.breadcrumbs {
+    margin-top: 15px;
+}
+
+.breadcrumbs .items {
+    font-size: 15px !important;
+    font-weight: normal !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #505050;
+}
+
+.breadcrumbs a:visited {
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs a:active {
+    color: #505050;
+    text-decoration: none;
+}
+
+.breadcrumbs strong {
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
+.breadcrumbs .item:not(:last-child):after {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+h1.page-title {
+    color: #000000;
+    font-size: 35px  !important;
+    font-weight: 600  !important;
+    font-stretch: normal  !important;
+    font-style: normal  !important;
+    line-height: 2  !important;
+    letter-spacing: normal  !important;
+}
+
+.product-info-main {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    padding: 1%;
+}
+
+.product-item-info {
+    border-radius: 5px;
+    border: solid 0.5px #979797;
+    padding: 5px;
+}
+
+.fotorama__nav__frame.fotorama__nav__frame--thumb {
+    opacity: 0.5;
+}
+
+.fotorama__nav__frame.fotorama__nav__frame--thumb.fotorama__active {
+    opacity: 1 !important;
+}
+
+.action.primary {
+    border-radius: 5px;
+    background: #ff7d09;
+    border: 1px solid #ff7d09;
+}
+
+.action.primary:hover {
+    background: #ffbf88;
+    border: 1px solid #ff7d09;
+}
+
+.action.primary:focus, .action.primary:active {
+    background: #ffbf88;
+    border: 1px solid #ff7d09;
+}
+
+.swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
+    background: white;
+    color: #000000;
+}
+
+.swatch-option {
+    border: 0.5px solid #000000;
+}
+
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+    -moz-appearance: inner-spin-button !important; 
+    -webkit-appearance: inner-spin-button !important;
+    appearance: inner-spin-button !important;
+}
+
+.box-tocart .input-text.qty {
+    width: 75px;
+}
+
+.review-form .action.submit.primary {
+    background: black;
+    color: white;
+}
+
+.block-content {
+    width: 100%;
+}
+
+.product-info-main .product-info-price {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.product-reviews-summary {
+    border-bottom: 0.5px solid #505050;
+    padding-bottom: 15px;
+    width: 100% !important;
+}
+
+.product-name {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.product-add-form {
+    padding-top: 0px !important;
+}
+
+.price-label {
+    display: none !important;
+}
+
+#tab-label-description-title {
+    border-top-left-radius: 5px;
+}
+
+#tab-label-reviews-title {
+    border-top-right-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    #product-review-container ol {
+        display: inline-block;
+    }
+    
+    .review-title {
+        margin-bottom: 20px;
+    }
+    
+    .review-ratings {
+        float: unset;
+        margin-bottom: 20px;
+    }
+    
+    #product-review-container {
+        float: right;
+        width: 55%;
+        margin-left: 3%;
+        padding-left: 3%;
+        border-left: 1px solid black;
+    }
+    
+    .review-ratings~.review-content, .review-ratings~.review-details {
+        margin-left: 0px;
+    }
+    
+    .block.review-add {
+        display: inline-flex;
+        width: 35%;
+        float: left;
+    }
+
+    .product-info-price .price-box .price-container .price {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .product-name {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    #tab-label-description {
+        margin-left: 30px;
+    }
+
+    .product-info-main {
+        width: 50% !important;
+    }
+
+    .product.media {
+        width: 45% !important;
+    }
+
+    .fotorama__stage {
+        max-width: 550px;
+        max-height: 550px;
+    }
+
+    .fotorama__stage__shaft.fotorama__grab {
+        max-width: 550px;
+    }
+}

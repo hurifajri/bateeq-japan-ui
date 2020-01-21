@@ -1,0 +1,30 @@
+<div class="container-collection m-5">
+    <div class="item-collection banner">
+        <img class="img-collection" src='<?php echo $this->getViewFileUrl(
+          'Moonlay_CustomHome::images/Home_Men.jpg'
+        ); ?>' />
+        <div class="collection">
+            <a href="<?= $block->escapeHtml(
+              $block->getData('men_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('men_jp')) ?></a>
+            <br />
+            <a href="<?= $block->escapeHtml(
+              $block->getData('men_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('men_en')) ?></a>
+        </div>
+    </div>
+    <div class="item-collection banner">
+        <img class="img-collection" src='<?php echo $this->getViewFileUrl(
+          'Moonlay_CustomHome::images/Home_Women.jpg'
+        ); ?>' />
+        <div class="collection">
+            <a href="<?= $block->escapeHtml(
+              $block->getData('women_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('women_jp')) ?></a>
+            <br />
+            <a href="<?= $block->escapeHtml(
+              $block->getData('women_url')
+            ) ?>"><?= $block->escapeHtml($block->getData('women_en')) ?></a>
+        </div>
+    </div>
+</div>
