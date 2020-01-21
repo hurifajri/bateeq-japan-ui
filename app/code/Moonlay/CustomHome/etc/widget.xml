@@ -39,10 +39,6 @@
             A widget to describe about company
         </description>
 		<parameters>
-			<!-- <parameter name="about" xsi:type="textarea" required="true" visible="true" sort_order="10">
-                <label>About Description</label>
-            </parameter> -->
-
             <parameter name="about" xsi:type="block" required="true" visible="true" sort_order="10">
                 <label translate="true">About Description</label>
                 <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg"/>
