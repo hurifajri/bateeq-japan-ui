@@ -39,13 +39,24 @@
             A widget to describe about company
         </description>
 		<parameters>
-            <parameter name="about" xsi:type="block" required="true" visible="true" sort_order="10">
+            <parameter name="video_id" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Youtube video id</label>
+            </parameter>
+
+            <parameter name="about" xsi:type="block" required="true" visible="true" sort_order="20">
                 <label translate="true">About Description</label>
                 <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg"/>
             </parameter>
 
-            <parameter name="video_id" xsi:type="text" required="true" visible="true" sort_order="20">
-                <label>Youtube video id</label>
+            <parameter xsi:type="block" name="background_image" visible="true" sort_order="30">
+                <label translate="true">Background Image</label>
+                <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
             </parameter>
 		</parameters>
 	</widget>
