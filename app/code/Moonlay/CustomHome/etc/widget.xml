@@ -43,12 +43,7 @@
                 <label>Youtube video id</label>
             </parameter>
 
-            <parameter name="about" xsi:type="block" required="true" visible="true" sort_order="20">
-                <label translate="true">About Description</label>
-                <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg"/>
-            </parameter>
-
-            <parameter xsi:type="block" name="background_image" visible="true" sort_order="30">
+            <parameter xsi:type="block" name="background_image" visible="true" sort_order="20">
                 <label translate="true">Background Image</label>
                 <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\ImageChooser">
                     <data>
@@ -57,6 +52,11 @@
                         </item>
                     </data>
                 </block>
+            </parameter>
+
+            <parameter name="about" xsi:type="block" required="true" visible="true" sort_order="30">
+                <label translate="true">About Description</label>
+                <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg"/>
             </parameter>
 		</parameters>
 	</widget>
