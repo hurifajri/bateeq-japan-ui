@@ -1,6 +1,6 @@
 <?php
 
-namespace Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type;
+namespace Moonlay\CustomHome\WidgetParameters\Block\Adminhtml\Widget\Type;
 
 Class Textarea extends \Magento\Backend\Block\Template
 {

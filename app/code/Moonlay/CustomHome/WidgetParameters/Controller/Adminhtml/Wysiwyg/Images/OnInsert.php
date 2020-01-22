@@ -1,5 +1,5 @@
 <?php
-namespace Dmatthew\WidgetParameters\Controller\Adminhtml\Wysiwyg\Images;
+namespace Moonlay\CustomHome\WidgetParameters\Controller\Adminhtml\Wysiwyg\Images;
 
 class OnInsert extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
 {
@@ -9,7 +9,7 @@ class OnInsert extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
     protected $resultRawFactory;
 
     /**
-     * @var \Dmatthew\WidgetParameters\Helper\Wysiwyg\Images
+     * @var \Moonlay\CustomHome\WidgetParameters\Helper\Wysiwyg\Images
      */
     private $imageHelper;
 
@@ -17,13 +17,13 @@ class OnInsert extends \Magento\Cms\Controller\Adminhtml\Wysiwyg\Images
      * @param \Magento\Backend\App\Action\Context $context
      * @param \Magento\Framework\Registry $coreRegistry
      * @param \Magento\Framework\Controller\Result\RawFactory $resultRawFactory
-     * @param \Dmatthew\WidgetParameters\Helper\Wysiwyg\Images
+     * @param \Moonlay\CustomHome\WidgetParameters\Helper\Wysiwyg\Images
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\Registry $coreRegistry,
         \Magento\Framework\Controller\Result\RawFactory $resultRawFactory,
-        \Dmatthew\WidgetParameters\Helper\Wysiwyg\Images $imageHelper
+        \Moonlay\CustomHome\WidgetParameters\Helper\Wysiwyg\Images $imageHelper
     ) {
         $this->resultRawFactory = $resultRawFactory;
         parent::__construct($context, $coreRegistry);
