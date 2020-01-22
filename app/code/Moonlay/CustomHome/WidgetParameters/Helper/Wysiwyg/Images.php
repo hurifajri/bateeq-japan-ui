@@ -1,5 +1,5 @@
 <?php
-namespace Moonlay\WidgetParameters\Helper\Wysiwyg;
+namespace Moonlay\CustomHome\WidgetParameters\Helper\Wysiwyg;
 
 class Images extends \Magento\Cms\Helper\Wysiwyg\Images
 {
