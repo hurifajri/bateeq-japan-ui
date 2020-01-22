@@ -1,6 +1,6 @@
 <?php
 
-namespace Moonlay\WidgetParameters\Block\Adminhtml\Widget\Type;
+namespace Moonlay\CustomHome\WidgetParameters\Block\Adminhtml\Widget\Type;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
