@@ -1,6 +1,6 @@
 <?php
 
-namespace Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type;
+namespace Moonlay\WidgetParameters\Block\Adminhtml\Widget\Type;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 
@@ -35,7 +35,7 @@ class ImageChooser extends \Magento\Backend\Block\Template
     public function prepareElementHtml(AbstractElement $element)
     {
         $config = $this->_getData('config');
-        $onInsertUrl = $this->getUrl('dmatthew_widgets/wysiwyg_images/onInsert');
+        $onInsertUrl = $this->getUrl('moonlay_widgets/wysiwyg_images/onInsert');
         $sourceUrl = $this->getUrl('cms/wysiwyg_images/index',
             ['target_element_id' => $element->getId(), 'on_insert_url' => urlencode($onInsertUrl)]);
         

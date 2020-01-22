@@ -9,7 +9,7 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 ```xml
 <parameter xsi:type="block" name="background_image" visible="true" sort_order="10">
     <label translate="true">Background Image</label>
-    <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\ImageChooser">
+    <block class="Moonlay\WidgetParameters\Block\Adminhtml\Widget\Type\ImageChooser">
         <data>
             <item name="button" xsi:type="array">
                 <item name="open" xsi:type="string">Choose Image...</item>
@@ -26,7 +26,7 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 ```xml
 <parameter xsi:type="block" name="body_text" visible="true" sort_order="10">
     <label translate="true">Body Text</label>
-    <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Textarea" />
+    <block class="Moonlay\WidgetParameters\Block\Adminhtml\Widget\Type\Textarea" />
 </parameter>
 ```
 
@@ -37,7 +37,7 @@ Useful widget parameter types for improved CMS Page building in Magento 2. Adds 
 ```xml
 <parameter xsi:type="block" name="body_text" visible="true" sort_order="10">
     <label translate="true">Body Text</label>
-    <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg" />
+    <block class="Moonlay\WidgetParameters\Block\Adminhtml\Widget\Type\Wysiwyg" />
 </parameter>
 ```
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dmatthew\WidgetParameters\Block\Plugin\Adminhtml\Wysiwyg\Images;
+namespace Moonlay\WidgetParameters\Block\Plugin\Adminhtml\Wysiwyg\Images;
 
 class Content
 {
