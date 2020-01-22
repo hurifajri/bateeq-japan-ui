@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cb47cd7f2393dbad5c294b1a69093c5",
+    "content-hash": "1745fa473c403d04d22c3ad1e93a6706",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -1943,6 +1943,50 @@
                 }
             ],
             "description": "Klarna Order Management Magento 2 Extension"
+        },
+        {
+            "name": "lillik/magento2-price-decimal",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lillik/magento2-price-decimal.git",
+                "reference": "963eaab6291c1607fe03351a2012b361eb305a72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lillik/magento2-price-decimal/zipball/963eaab6291c1607fe03351a2012b361eb305a72",
+                "reference": "963eaab6291c1607fe03351a2012b361eb305a72",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Lillik\\PriceDecimal\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lilian Codreanu",
+                    "email": "lilian.codreanu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Magento 2 Price Decimal Precision",
+            "keywords": [
+                "magento2"
+            ],
+            "time": "2018-10-23T08:01:46+00:00"
         },
         {
             "name": "magento/composer",
@@ -14378,7 +14422,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-form",
-            "time": "2019-02-26T18:13:31+00:00"
+            "time": "2019-10-04T10:46:36+00:00"
         },
         {
             "name": "zendframework/zend-http",
@@ -14434,7 +14478,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-http",
-            "time": "2019-02-19T18:58:14+00:00"
+            "time": "2019-12-04T23:02:34+00:00"
         },
         {
             "name": "zendframework/zend-hydrator",
@@ -14495,7 +14539,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-hydrator",
-            "time": "2018-11-19T19:16:10+00:00"
+            "time": "2019-10-04T11:17:36+00:00"
         },
         {
             "name": "zendframework/zend-i18n",
@@ -14960,7 +15004,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-mime",
-            "time": "2018-05-14T19:02:50+00:00"
+            "time": "2019-10-16T19:30:37+00:00"
         },
         {
             "name": "zendframework/zend-modulemanager",
@@ -15394,7 +15438,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-session",
-            "time": "2019-09-19T19:50:12+00:00"
+            "time": "2019-10-28T19:40:43+00:00"
         },
         {
             "name": "zendframework/zend-soap",
@@ -15592,7 +15636,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-uri",
-            "time": "2019-02-27T21:39:04+00:00"
+            "time": "2019-10-07T13:35:33+00:00"
         },
         {
             "name": "zendframework/zend-validator",
@@ -15668,7 +15712,7 @@
                 "zf"
             ],
             "abandoned": "laminas/laminas-validator",
-            "time": "2019-01-30T14:26:10+00:00"
+            "time": "2019-12-28T04:07:18+00:00"
         },
         {
             "name": "zendframework/zend-view",
