@@ -1632,7 +1632,7 @@ body.customer-account-login div.m-5 {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -1651,10 +1651,7 @@ body.customer-account-login div.m-5 {
   letter-spacing: normal;
   line-height: 1.5;
   color: #ffffff;
-}
-
-.video iframe {
-  width: 100%;
+  margin-bottom: 25px;
 }
 
 .footer-socmed-container {
@@ -1728,9 +1725,9 @@ button.en {
     color: #000;
   }
 
-  .video iframe {
+  /*.video iframe {
     height: 350px;
-  }
+  }*/
 }
 
 /* iPad portrait and landscape */
@@ -1751,9 +1748,9 @@ button.en {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .video iframe {
+  /*.video iframe {
     height: 500px;
-  }
+  }*/
 
   .footer-logo-container {
     float: right;
@@ -1775,6 +1772,46 @@ button.en {
 }
 
 /******************** Style for Moonlay/bateeq Theme *********************/
+
+
+.cart-summary .block .title strong,
+th.price,
+th.subtotal,
+.product-info-stock-sku {
+  position: relative;
+}
+
+th.price, th.subtotal {
+    width: 17%;
+}
+
+th.price span:after, th.subtotal span:after,
+strong#block-shipping-heading:after,
+.product-info-stock-sku:before {
+    content: '(消費税10%込み価格)';
+    color: #333;
+    position: absolute;
+
+}
+
+th.price span:after, th.subtotal span:after {
+    font-size: 8px;
+    right: 10px;
+    bottom: 3px;
+}
+
+strong#block-shipping-heading:after {
+    font-size: 8px;
+    right: 17px;
+    bottom: -8px;
+}
+
+.product-info-stock-sku:before {
+    font-size: 18px;
+    left: 10px;
+    top: 6px;
+}
+
 body.cms-home .products-grid .product-item-info:hover,
 body.cms-home .products-grid .product-item-info.active {
   padding: 0;
@@ -2412,6 +2449,27 @@ body.cms-home .price-label {
   display: none;
 }
 
+// About Page Video Youtube
+.item-about.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /*padding-bottom: 50px;*/
+  margin-bottom: 25px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.item-about.video iframe,
+.item-about.video object,
+.item-about.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   // Rank Products
@@ -2575,11 +2633,6 @@ body.cms-home .price-label {
     margin-bottom: 35px;
   }
 
-  // About Page Video Youtube
-  body.cms-home div.column.main div.container-about div.item-about.video {
-    padding-bottom: 50px;
-  }
-
   // Sticky Navbar
   .page-header,
   .text-container {
@@ -2618,7 +2671,7 @@ body.cms-home .price-label {
   }
 
   .text-container {
-    top: 78px;
+    top: 70px;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
     z-index: 2;
   }
@@ -3044,7 +3097,7 @@ body.cms-home .price-label {
   }
 
   .block-search {
-    width: 42%;
+    width: 31%;
   }
 }
 
@@ -3055,7 +3108,7 @@ body.cms-home .price-label {
   }
 
   .block-search {
-    width: 50%;
+    width: 40%;
   }
 
   .page-layout-1column
@@ -3080,7 +3133,7 @@ body.cms-home .price-label {
   }
 
   .block-search {
-    width: 52%;
+    width: 44%;
   }
 }
 

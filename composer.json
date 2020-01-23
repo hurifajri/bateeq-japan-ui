@@ -13,6 +13,7 @@
     "require": {
         "craftyclicks/module-clicktoaddress": "^1.1",
         "fooman/googleanalyticsplus-m2": "^4.0",
+        "lillik/magento2-price-decimal": "^1.0",
         "magento/product-community-edition": "2.3.3",
         "mageplaza/magento-2-japanese-language-pack": "dev-master",
         "mageplaza/magento-2-product-slider": "^2.0",

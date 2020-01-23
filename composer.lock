@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed77468a9713161959feb26e42cb1596",
+    "content-hash": "1745fa473c403d04d22c3ad1e93a6706",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -1968,6 +1968,50 @@
                 }
             ],
             "description": "Klarna Order Management Magento 2 Extension"
+        },
+        {
+            "name": "lillik/magento2-price-decimal",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lillik/magento2-price-decimal.git",
+                "reference": "963eaab6291c1607fe03351a2012b361eb305a72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lillik/magento2-price-decimal/zipball/963eaab6291c1607fe03351a2012b361eb305a72",
+                "reference": "963eaab6291c1607fe03351a2012b361eb305a72",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "php": "~5.6.0|7.0.2|7.0.4|~7.0.6|~7.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Lillik\\PriceDecimal\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lilian Codreanu",
+                    "email": "lilian.codreanu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Magento 2 Price Decimal Precision",
+            "keywords": [
+                "magento2"
+            ],
+            "time": "2018-10-23T08:01:46+00:00"
         },
         {
             "name": "magento/composer",
