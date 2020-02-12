@@ -159,7 +159,6 @@ class Data extends AbstractHelper
     public function getCancelledUrl($orderId)
     {
         return $this->getUrlBuilder()->getUrl('gmomultipayment/checkout/cancel') . "?orderId=$orderId";
-        // return $this->getStoreManager()->getStore()->getBaseUrl() . "gmomultipayment/checkout/cancel?orderId=$orderId";
     }
 
     /**
