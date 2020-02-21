@@ -234,6 +234,7 @@ return [
         'Magestat_SigninPhoneNumber' => 0,
         'Moonlay_CustomHome' => 1,
         'Moonlay_CustomerAttribute' => 1,
+        'Moonlay_GMOMultiPayment' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1,
         'Yotpo_Yotpo' => 1
